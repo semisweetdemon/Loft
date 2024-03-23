@@ -1,0 +1,20 @@
+{
+	"users": [
+		{
+			"id": "1",
+			"email": "max@mail.ru",
+			"name": "Ravhan",
+			"surname": "Bakytbekov",
+			"phone": "+996706099066",
+			"adress": {
+				"city": "Bishkek",
+				"street": "Altyn-kazyk",
+				"home": "9"
+			},
+			"orders": [],
+			"carts": [],
+			"point": 500
+		}
+	],
+	"products": []
+}
