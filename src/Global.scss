@@ -17,5 +17,21 @@ a:hover {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+svg path {
+	stroke: inherit;
+	stroke-width: inherit;
+	fill: inherit;
+}
+
+svg,
+div,
+a {
+	transition: $tr;
+}
+
+svg {
+	stroke: $text-color;
 }
