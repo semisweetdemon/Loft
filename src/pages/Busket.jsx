@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 
 const Busket = () => {
-	return <div></div>;
-};
+	return <div></div>
+}
 
-export default Busket;
+export default Busket
