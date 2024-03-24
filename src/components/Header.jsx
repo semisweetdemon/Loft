@@ -1,17 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { logo, wishlist, bag, profile, search, call } from './icons';
+import { Link, useNavigate } from 'react-router-dom';
+import { logo, wishlist, bag, profile, search, call, delivery } from '../components';
+import { useSelector } from 'react-redux';
+import * as icons from './icons';
 
 export const Header = () => {
+	const category = useSelector((state) => state.products);
+	const navigate = useNavigate();
+
 	return (
 		<header id="header">
 			<div className="container">
 				<div className="header">
 					<div className="header__top">
 						<div className="logo">
-							{logo}
+							<div className="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div onClick={() => navigate('/')}>{logo}</div>
 							<nav>
-								<Link>Главная</Link>
+								<Link to="/">Главная</Link>
 								<Link>О нас</Link>
 								<Link>Контакты</Link>
 							</nav>
@@ -21,16 +31,31 @@ export const Header = () => {
 							<input type="text" placeholder="Поиск" />
 						</div>
 						<div className="delivery">
-							{call}
-							<Link>8 (964) 89 99 119</Link>
+							<Link>{call} 8 (964) 89 99 119</Link>
+							<Link>{delivery} Доставка</Link>
 						</div>
 						<div className="profile">
-							{wishlist}
-							{bag}
-							{profile}
+							<div>{wishlist} </div>
+							<div>{bag} </div>
+							<div onClick={() => navigate('/admin')}>{profile} </div>
 						</div>
 					</div>
-					<div className="header__navigation"></div>
+					<div className="header__navigation">
+						<div className="sale" onClick={() => navigate('/sale')} key={'/sale'}>
+							{icons.sale}
+							Акции
+						</div>
+						<div onClick={() => navigate('/new')} key={'/new'}>
+							{icons.newProduct}
+							Новинки
+						</div>
+						{category.arr.map((el) => (
+							<div onClick={() => navigate(el.path)} key={el.path}>
+								{icons[el.categoryIconName]}
+								{el.categoryName}
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</header>

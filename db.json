@@ -16,5 +16,69 @@
 			"point": 500
 		}
 	],
-	"products": []
+	"products": [
+		{
+			"categoryName": "Кухня",
+			"categoryIconName": "kitchen",
+			"path": "/kitchen",
+			"categoryProducts": [],
+			"id": "8bad"
+		},
+		{
+			"categoryName": "Спальни",
+			"categoryIconName": "bedroom",
+			"path": "/bedroom",
+			"categoryProducts": [],
+			"id": "0099"
+		},
+		{
+			"categoryName": "Гостинные",
+			"categoryIconName": "hall",
+			"path": "/hall",
+			"categoryProducts": [],
+			"id": "14ab"
+		},
+		{
+			"categoryName": "Прихожие",
+			"categoryIconName": "hallways",
+			"path": "/hallways",
+			"categoryProducts": [],
+			"id": "50f2"
+		},
+		{
+			"categoryName": "Офисная мебель",
+			"categoryIconName": "office",
+			"path": "/office",
+			"categoryProducts": [],
+			"id": "16fd"
+		},
+		{
+			"categoryName": "Детская",
+			"categoryIconName": "children",
+			"path": "/children",
+			"categoryProducts": [],
+			"id": "1c2b"
+		},
+		{
+			"categoryName": "Матрасы",
+			"categoryIconName": "mattress",
+			"path": "/mattress",
+			"categoryProducts": [],
+			"id": "c6d9"
+		},
+		{
+			"categoryName": "Мягкая мебель",
+			"categoryIconName": "furniture",
+			"path": "/furniture",
+			"categoryProducts": [],
+			"id": "cf2e"
+		},
+		{
+			"categoryName": "Шкафы",
+			"categoryIconName": "cupboard",
+			"path": "/cupboard",
+			"categoryProducts": [],
+			"id": "2186"
+		}
+	]
 }
