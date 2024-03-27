@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+// import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { logo, wishlist, bag, profile, search, call, delivery } from '../components';
 import { useSelector } from 'react-redux';
 import * as icons from './icons';
@@ -7,6 +7,7 @@ import * as icons from './icons';
 export const Header = () => {
 	const category = useSelector((state) => state.products);
 	const navigate = useNavigate();
+	const { pathname } = useLocation();
 
 	return (
 		<header id="header">
@@ -22,7 +23,7 @@ export const Header = () => {
 							<div onClick={() => navigate('/')}>{logo}</div>
 							<nav>
 								<Link to="/">Главная</Link>
-								<Link>О нас</Link>
+								<Link to="/about">О нас</Link>
 								<Link>Контакты</Link>
 							</nav>
 						</div>
@@ -40,22 +41,20 @@ export const Header = () => {
 							<div onClick={() => navigate('/admin')}>{profile} </div>
 						</div>
 					</div>
-					<div className="header__navigation">
-						<div className="sale" onClick={() => navigate('/sale')} key={'/sale'}>
-							{icons.sale}
-							Акции
-						</div>
-						{/* <div onClick={() => navigate('/new')} key={'/new'}>
-							{icons.newProduct}
-							Новинки
-						</div> */}
-						{category.arr.map((el) => (
-							<div onClick={() => navigate(el.path)} key={el.path}>
-								{icons[el.categoryIconName]}
-								{el.categoryName}
+					{pathname !== '/about' && (
+						<div className="header__navigation">
+							<div className="sale" onClick={() => navigate('/sale')} key={'/sale'}>
+								{icons.sale}
+								Акции
 							</div>
-						))}
-					</div>
+							{category.arr.map((el) => (
+								<div onClick={() => navigate(el.path)} key={el.path}>
+									{icons[el.categoryIconName]}
+									{el.categoryName}
+								</div>
+							))}
+						</div>
+					)}
 				</div>
 			</div>
 		</header>
