@@ -45,10 +45,10 @@ export const Header = () => {
 							{icons.sale}
 							Акции
 						</div>
-						<div onClick={() => navigate('/new')} key={'/new'}>
+						{/* <div onClick={() => navigate('/new')} key={'/new'}>
 							{icons.newProduct}
 							Новинки
-						</div>
+						</div> */}
 						{category.arr.map((el) => (
 							<div onClick={() => navigate(el.path)} key={el.path}>
 								{icons[el.categoryIconName]}

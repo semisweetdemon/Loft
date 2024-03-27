@@ -14,7 +14,58 @@ const initialState = {
 export const productSlice = createSlice({
 	name: 'product',
 	initialState,
-	reducers: {},
+	reducers: {
+		setAddRemoveFavorite(state, action) {
+			let findParent = state.arr.find((el) => el.path === action.payload.parent);
+			let newArr = findParent.categoryProducts.map((elem) => {
+				if (elem.id === action.payload.id) {
+					return elem.favorite === true ? { ...elem, favorite: false } : { ...elem, favorite: true };
+				}
+				return elem;
+			});
+			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+		},
+		setAddBusket(state, action) {
+			let findParent = state.arr.find((el) => el.path === action.payload.parent);
+			let newArr = findParent.categoryProducts.map((elem) => {
+				if (elem.id === action.payload.id) {
+					return elem.busket === true ? { ...elem, count: action.payload.count + 1 } : { ...elem, busket: true };
+				}
+				return elem;
+			});
+			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+		},
+		setRemoveBusket(state, action) {
+			let findParent = state.arr.find((el) => el.path === action.payload.parent);
+			let newArr = findParent.categoryProducts.map((elem) => {
+				if (elem.id === action.payload.id) {
+					return { ...elem, busket: false, count: 1 };
+				}
+				return elem;
+			});
+			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+		},
+		setCountPlus(state, action) {
+			let findParent = state.arr.find((el) => el.path === action.payload.parent);
+			let newArr = findParent.categoryProducts.map((elem) => {
+				if (elem.id === action.payload.id) {
+					return { ...elem, count: action.payload.count + 1 };
+				}
+				return elem;
+			});
+			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+		},
+		setCountMinus(state, action) {
+			let findParent = state.arr.find((el) => el.path === action.payload.parent);
+			let newArr = findParent.categoryProducts.map((elem) => {
+				if (elem.id === action.payload.id) {
+					return action.payload.count > 1 ? { ...elem, count: action.payload.count - 1 } : { ...elem };
+				}
+				return elem;
+			});
+			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+		},
+	},
 	extraReducers: (builder) => {
 		builder.addCase(fetchProduct.pending, (state) => {
 			state.status = 'loading';
@@ -31,6 +82,6 @@ export const productSlice = createSlice({
 	},
 });
 
-export const {} = productSlice.actions;
+export const { setAddRemoveFavorite, setAddBusket, setRemoveBusket, setCountPlus, setCountMinus } = productSlice.actions;
 
 export default productSlice.reducer;

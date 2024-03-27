@@ -1,0 +1,41 @@
+#admin {
+	.admin {
+		&__add {
+			max-width: 600px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			input,
+			textarea {
+				width: 100%;
+				padding: 15px;
+				outline: none;
+				background: transparent;
+				border: 1px solid $light-gray;
+			}
+
+			input[value=''] {
+				border: 1px solid $light-gray;
+			}
+
+			textarea {
+				resize: none;
+				height: 200px;
+			}
+
+			button {
+				outline: none;
+				border: none;
+				background: transparent;
+				padding: 10px;
+				border: 1px solid $main-color;
+
+				&:active {
+					background-color: $main-color;
+				}
+			}
+		}
+	}
+}

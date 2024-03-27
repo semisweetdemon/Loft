@@ -1,6 +1,10 @@
 // import React from 'react';
 
+import { useTitle } from 'ahooks';
+
 const Home = () => {
+	useTitle('Loft');
+
 	return (
 		<section id="home">
 			<div className="container">

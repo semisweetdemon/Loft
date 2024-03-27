@@ -1,0 +1,160 @@
+#product {
+	.product {
+		.info {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 40px;
+
+			@media (max-width: 1070px) {
+				grid-template-columns: 100%;
+				column-gap: 0;
+				row-gap: 20px;
+			}
+
+			&__image {
+				height: 444px;
+				width: 100%;
+				position: relative;
+
+				@media (max-width: 1070px) {
+					height: 50vw;
+				}
+
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					object-fit: cover;
+					z-index: -1;
+				}
+			}
+
+			&__text {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				h3 {
+					font-size: 28px;
+				}
+				h6 {
+					font-size: 14px;
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+
+			&__count {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				button {
+					width: 24px;
+					height: 24px;
+					outline: none;
+					background: transparent;
+					border: 1px solid $main-color;
+					border-radius: 50%;
+					position: relative;
+					cursor: pointer;
+
+					p {
+						position: relative;
+						z-index: 2;
+						color: $text-color;
+						transition: 0.1s;
+					}
+
+					&::before {
+						position: absolute;
+						content: '';
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						background: $main-color;
+						border-radius: 50%;
+						width: 0;
+						height: 0;
+						transition: 0.1s;
+						z-index: -1;
+					}
+
+					&:active {
+						p {
+							color: $light-gray !important;
+						}
+
+						&::before {
+							width: 104%;
+							height: 104%;
+						}
+					}
+				}
+			}
+
+			&__add {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 20px;
+
+				@media (max-width: 544px) {
+					flex-direction: column;
+					gap: 10px;
+				}
+
+				button {
+					width: 100%;
+					padding: 15px 30px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+					border: none;
+					outline: none;
+					background: transparent;
+
+					&:first-child {
+						background: $main-color;
+						color: $light-gray;
+						border: 1px solid transparent;
+
+						@media (any-hover) {
+							&:hover {
+								background-color: transparent;
+								color: $text-color;
+								border-color: $main-color;
+							}
+						}
+					}
+
+					&:last-child {
+						border: 1px solid transparent;
+						svg {
+							stroke: $text-color;
+							stroke-width: 2px;
+							fill: transparent;
+						}
+
+						.icon {
+							svg {
+								fill: $text-color;
+							}
+						}
+
+						@media (any-hover) {
+							&:hover {
+								border-color: $text-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
