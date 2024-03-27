@@ -1,14 +1,16 @@
-import React from 'react';
+// import React from 'react';
 import Home from '../pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import CategoryPage from '../pages/CategoryPage';
 import Admin from '../pages/Admin';
+import About from '../pages/About';
 
 const MainRouter = () => {
 	const PAGES = [
 		{ path: '/', element: <Home />, key: 1 },
-		{ path: '/:id', element: <CategoryPage />, key: 2 },
-		{ path: '/admin', element: <Admin />, key: 3 },
+		{ path: '/about', element: <About />, key: 2 },
+		{ path: '/:id', element: <CategoryPage />, key: 3 },
+		{ path: '/admin', element: <Admin />, key: 4 },
 	];
 	return (
 		<Routes>

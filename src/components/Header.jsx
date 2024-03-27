@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { logo, wishlist, bag, profile, search, call, delivery } from '../components';
 import { useSelector } from 'react-redux';
@@ -22,7 +22,7 @@ export const Header = () => {
 							<div onClick={() => navigate('/')}>{logo}</div>
 							<nav>
 								<Link to="/">Главная</Link>
-								<Link>О нас</Link>
+								<Link to='/about'>О нас</Link>
 								<Link>Контакты</Link>
 							</nav>
 						</div>
