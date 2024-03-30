@@ -5,6 +5,19 @@
 			align-items: center;
 			justify-content: space-between;
 			padding: 20px 0;
+
+			div {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				select {
+					outline: none;
+					border: 1px solid $text-color;
+					background: transparent;
+					width: 70px;
+				}
+			}
 		}
 	}
 }

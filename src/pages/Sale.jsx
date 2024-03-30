@@ -7,7 +7,7 @@ const Sale = () => {
 	return (
 		<section id="sale">
 			<div className="container">
-				<div className="sale"></div>
+				<div className="sale" style={{ minHeight: '60vh' }}></div>
 			</div>
 		</section>
 	);

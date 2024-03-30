@@ -1,0 +1,43 @@
+#busket {
+	.busket {
+		&__counter {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 0;
+
+			h5 {
+				font-size: 18px;
+				font-weight: 400;
+			}
+		}
+
+		&__button {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px 0;
+
+			button {
+				max-width: 320px;
+				width: 100%;
+				padding: 20px 0;
+				outline: none;
+				background: transparent;
+				border: 1px solid $text-color;
+
+				@media (any-hover) {
+					&:hover {
+						background: $text-color;
+						color: $light-gray;
+					}
+				}
+
+				&:active {
+					background: $main-color;
+				}
+			}
+		}
+	}
+}

@@ -1,14 +1,35 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { userApi } from './SaveSlice';
 
 export const fetchProduct = createAsyncThunk('product/fetchGetProduct', async () => {
 	const data = axios('http://localhost:3000/products').then((res) => res.data);
 	return data;
 });
 
+export const fetchOldInfo = createAsyncThunk('produc/getOldInfo', async () => {
+	let arr = await axios('http://localhost:3000/products').then((res) => res.data);
+	let aboutUser = await axios(userApi).then((res) => res.data);
+	let mass = [];
+	for (let i of arr) {
+		let m = i.categoryProducts.map((el) => {
+			for (let n of aboutUser.busketAndFavorite) {
+				if (n.id === el.id) {
+					return { ...el, busket: n.busket, count: n.count, favorite: n.favorite };
+				}
+			}
+			return el;
+		});
+		mass.push({ ...i, categoryProducts: m });
+	}
+	return mass;
+});
+
 const initialState = {
 	arr: [],
-	status: 'loading', // 'loading' | 'success' | 'error'
+	status: 'loading',
+	search: '',
+	beforeSearch: '',
 };
 
 export const productSlice = createSlice({
@@ -16,54 +37,25 @@ export const productSlice = createSlice({
 	initialState,
 	reducers: {
 		setAddRemoveFavorite(state, action) {
-			let findParent = state.arr.find((el) => el.path === action.payload.parent);
-			let newArr = findParent.categoryProducts.map((elem) => {
-				if (elem.id === action.payload.id) {
-					return elem.favorite === true ? { ...elem, favorite: false } : { ...elem, favorite: true };
-				}
-				return elem;
-			});
-			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+			state.arr = action.payload;
 		},
 		setAddBusket(state, action) {
-			let findParent = state.arr.find((el) => el.path === action.payload.parent);
-			let newArr = findParent.categoryProducts.map((elem) => {
-				if (elem.id === action.payload.id) {
-					return elem.busket === true ? { ...elem, count: action.payload.count + 1 } : { ...elem, busket: true };
-				}
-				return elem;
-			});
-			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+			state.arr = action.payload;
 		},
 		setRemoveBusket(state, action) {
-			let findParent = state.arr.find((el) => el.path === action.payload.parent);
-			let newArr = findParent.categoryProducts.map((elem) => {
-				if (elem.id === action.payload.id) {
-					return { ...elem, busket: false, count: 1 };
-				}
-				return elem;
-			});
-			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+			state.arr = action.payload;
 		},
 		setCountPlus(state, action) {
-			let findParent = state.arr.find((el) => el.path === action.payload.parent);
-			let newArr = findParent.categoryProducts.map((elem) => {
-				if (elem.id === action.payload.id) {
-					return { ...elem, count: action.payload.count + 1 };
-				}
-				return elem;
-			});
-			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+			state.arr = action.payload;
 		},
 		setCountMinus(state, action) {
-			let findParent = state.arr.find((el) => el.path === action.payload.parent);
-			let newArr = findParent.categoryProducts.map((elem) => {
-				if (elem.id === action.payload.id) {
-					return action.payload.count > 1 ? { ...elem, count: action.payload.count - 1 } : { ...elem };
-				}
-				return elem;
-			});
-			state.arr = state.arr.map((el) => (el.path === action.payload.parent ? { ...findParent, categoryProducts: newArr } : el));
+			state.arr = action.payload;
+		},
+		setSearch(state, action) {
+			state.search = action.payload;
+		},
+		setWhereIWas(state, action) {
+			state.beforeSearch = action.payload !== '/search' ? action.payload : state.beforeSearch;
 		},
 	},
 	extraReducers: (builder) => {
@@ -79,9 +71,17 @@ export const productSlice = createSlice({
 			state.status = 'error';
 			state.arr = [];
 		});
+		builder.addCase(fetchOldInfo.fulfilled, (state, action) => {
+			state.arr = action.payload;
+		});
+		builder.addCase(fetchOldInfo.rejected, (state, action) => {
+			console.log(action.error);
+			console.log(action.type);
+			console.log(action.meta);
+		});
 	},
 });
 
-export const { setAddRemoveFavorite, setAddBusket, setRemoveBusket, setCountPlus, setCountMinus } = productSlice.actions;
+export const { setAddRemoveFavorite, setAddBusket, setRemoveBusket, setCountPlus, setCountMinus, setSearch, setWhereIWas } = productSlice.actions;
 
 export default productSlice.reducer;

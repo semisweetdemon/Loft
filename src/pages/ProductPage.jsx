@@ -1,26 +1,28 @@
 import React from 'react';
 import { useTitle } from 'ahooks';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCountPlus, setCountMinus, setAddBusket, setAddRemoveFavorite } from '../redux/Slices/productSlice';
 import { wishlist } from '../components';
+import { functionAddBusket, functionAddRemoveFavorite, functionCountMinus, functionCountPlus } from '../App';
 
 const ProductPage = () => {
 	const { arr } = useSelector((state) => state.products);
+	const { aboutuser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const [product, setProduct] = React.useState(null);
+	const [parentElem, setParentElem] = React.useState('');
 	const { pathname } = useLocation();
-	const searchProduct = pathname
-		.split('/')
-		.filter((el) => el)
-		.map((el) => '/' + el);
+	const searchProduct = pathname.split('/').filter((el) => el);
 	useTitle(product?.name);
 
 	React.useEffect(() => {
 		arr.find((el) => {
-			if (el.path === searchProduct[0]) {
+			if (el.path === '/' + searchProduct[0]) {
+				setParentElem(el.categoryName);
 				el.categoryProducts.find((elem) => {
-					if (elem.path === searchProduct[1]) {
+					if (elem.id === +searchProduct[1]) {
 						setProduct(elem);
 					}
 				});
@@ -35,9 +37,13 @@ const ProductPage = () => {
 				<div className="container">
 					<div className="product">
 						<div className="product__nav navigate">
-							<h4>Главная</h4>
+							<h4 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+								Главная
+							</h4>
 							<h4>/</h4>
-							<h4>{product.parent.charAt(1).toUpperCase() + product.parent.slice(2)}</h4>
+							<h4 onClick={() => navigate(product.parent)} style={{ cursor: 'pointer' }}>
+								{parentElem}
+							</h4>
 							<h4>/</h4>
 							<h4>{product.name}</h4>
 						</div>
@@ -49,17 +55,17 @@ const ProductPage = () => {
 								<h3>{product.name}</h3>
 								<h6>{product.subcategory}</h6>
 								<h3>${product.price}</h3>
-								<h6>Цвет {product.color}</h6>
+								{product.color !== '' && <h6>Цвет {product.color}</h6>}
 								<div className="info__count">
-									<button onClick={() => dispatch(setCountMinus(product))}>-</button>
+									<button onClick={() => dispatch(setCountMinus(functionCountMinus(arr, product, aboutuser)))}>-</button>
 									<h3>{product.count}</h3>
-									<button onClick={() => dispatch(setCountPlus(product))}>+</button>
+									<button onClick={() => dispatch(setCountPlus(functionCountPlus(arr, product, aboutuser)))}>+</button>
 								</div>
 								<div className="info__add">
-									<button onClick={() => dispatch(setAddBusket(product))}>
+									<button onClick={() => dispatch(setAddBusket(functionAddBusket(arr, product, aboutuser)))}>
 										<p>Добавить в корзину</p>
 									</button>
-									<button onClick={() => dispatch(setAddRemoveFavorite(product))}>
+									<button onClick={() => dispatch(setAddRemoveFavorite(functionAddRemoveFavorite(arr, product, aboutuser)))}>
 										<div className={product.favorite ? 'icon' : ''}>{wishlist}</div>
 										<p>Добавить в желаемое</p>
 									</button>

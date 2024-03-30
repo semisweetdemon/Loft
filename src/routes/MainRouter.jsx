@@ -6,6 +6,9 @@ import Admin from '../pages/Admin';
 import Sale from '../pages/Sale';
 import ProductPage from '../pages/ProductPage';
 import About from '../pages/About';
+import Busket from '../pages/Busket';
+import Favorite from '../pages/Favorite';
+import Search from '../pages/Search';
 
 const MainRouter = () => {
 	const PAGES = [
@@ -15,7 +18,11 @@ const MainRouter = () => {
 		{ path: '/admin', element: <Admin />, key: 4 },
 		{ path: '/sale', element: <Sale />, key: 5 },
 		{ path: '/:id/:product', element: <ProductPage />, key: 6 },
+		{ path: '/busket', element: <Busket />, key: 7 },
+		{ path: '/favorite', element: <Favorite />, key: 8 },
+		{ path: '/search', element: <Search />, key: 9 },
 	];
+
 	return (
 		<Routes>
 			{PAGES.map((el) => (

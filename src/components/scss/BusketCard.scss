@@ -1,0 +1,101 @@
+.busketcard {
+	padding: 20px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 120px auto 360px 120px;
+
+	@media (max-width: 850px) {
+		grid-template-columns: 120px auto;
+		gap: 20px;
+	}
+
+	@media (max-width: 400px) {
+		grid-template-columns: 100%;
+		padding: 5px 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: $text-color;
+		opacity: 0.2;
+	}
+
+	&__image {
+		height: 100px;
+		width: 100px;
+		position: relative;
+
+		@media (max-width: 400px) {
+			width: 100%;
+			height: 50vw;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	}
+
+	&__info {
+		@media (min-width: 850px) {
+			align-self: center;
+		}
+	}
+
+	&__counter {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		justify-self: center;
+
+		@media (max-width: 400px) {
+			justify-self: flex-start;
+		}
+
+		button {
+			width: 24px;
+			height: 24px;
+			border: 1px solid $main-color;
+			border-radius: 50%;
+		}
+	}
+
+	&__end {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		justify-self: center;
+
+		@media (max-width: 850px) {
+			justify-self: flex-end;
+		}
+
+		h4 {
+			font-size: 18px;
+		}
+
+		button {
+			outline: none;
+			border: none;
+			background: transparent;
+			cursor: pointer;
+			width: 24px;
+			height: 24px;
+		}
+
+		svg {
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

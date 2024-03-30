@@ -1,16 +1,13 @@
 import React from 'react';
 import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchProduct } from '../redux/Slices/productSlice';
+import { useSelector } from 'react-redux';
 
 const Admin = () => {
 	const { arr } = useSelector((state) => state.products);
-	const dispatch = useDispatch();
 	const [aboutProduct, setAboutProduct] = React.useState({
 		parent: '/kitchen',
 		image: '',
 		name: '',
-		path: '',
 		color: '',
 		price: '',
 		sale: '',
@@ -23,7 +20,7 @@ const Admin = () => {
 	});
 
 	const changeAboutProduct = (event) => {
-		setAboutProduct({ ...aboutProduct, [event.target.name]: event.target.value, path: event.target.name === 'name' ? '/' + event.target.value.toLowerCase().trim().replaceAll(' ', '') : aboutProduct.path });
+		setAboutProduct({ ...aboutProduct, [event.target.name]: event.target.value });
 	};
 
 	const createProduct = () => {
@@ -34,7 +31,6 @@ const Admin = () => {
 			parent: '/kitchen',
 			image: '',
 			name: '',
-			path: '',
 			color: '',
 			price: '',
 			sale: '',
@@ -45,7 +41,6 @@ const Admin = () => {
 			busket: false,
 			id: Date.now(),
 		});
-		dispatch(fetchProduct());
 	};
 
 	return (

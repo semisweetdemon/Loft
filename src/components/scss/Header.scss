@@ -1,4 +1,5 @@
 header {
+	position: relative;
 	.header {
 		&__top {
 			display: grid;
@@ -69,6 +70,11 @@ header {
 			}
 
 			.logo {
+				@media (max-width: 400px) {
+					width: 100%;
+					justify-content: space-between;
+				}
+
 				svg {
 					fill: $text-color;
 					stroke: none;
@@ -95,15 +101,14 @@ header {
 
 				a {
 					&:first-child {
+						@media (max-width: 1200px) {
+							display: none;
+						}
 						svg {
 							stroke: $text-color;
 						}
 					}
 					&:last-child {
-						@media (max-width: 1200px) {
-							display: none;
-						}
-
 						svg {
 							fill: $text-color;
 							stroke: none;
@@ -112,13 +117,16 @@ header {
 				}
 			}
 
+			.profile {
+				@media (max-width: 650px) {
+					display: none;
+				}
+			}
+
 			.search {
 				position: relative;
 				max-width: 500px;
 				width: 100%;
-				@media (max-width: 650px) {
-					display: none;
-				}
 
 				input {
 					width: 100%;
@@ -207,6 +215,91 @@ header {
 					}
 				}
 			}
+		}
+	}
+
+	.show {
+		left: 0% !important;
+	}
+
+	.burger-items {
+		position: absolute;
+		left: -100%;
+		top: 0;
+		max-width: 400px;
+		width: 100%;
+		background: white;
+		z-index: 300;
+		padding: 20px;
+
+		@media (min-width: 900px) {
+			display: none;
+		}
+
+		svg {
+			stroke: none;
+			stroke-width: 1px;
+			fill: $text-color;
+		}
+
+		.route-items {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 20px;
+
+			div {
+				height: 24px;
+				width: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		&__close {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-bottom: 20px;
+
+			button {
+				width: 24px;
+				height: 24px;
+				outline: none;
+				border: none;
+				background: transparent;
+				cursor: pointer;
+
+				svg {
+					stroke: $text-color;
+				}
+			}
+		}
+
+		&__profile {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding-bottom: 20px;
+
+			> div {
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5) {
+					svg {
+						fill: none;
+						stroke: $text-color;
+					}
+				}
+			}
+		}
+
+		&__navigation {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding-bottom: 20px;
 		}
 	}
 }
