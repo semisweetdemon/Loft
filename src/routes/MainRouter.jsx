@@ -6,6 +6,8 @@ import Admin from '../pages/Admin';
 import Sale from '../pages/Sale';
 import ProductPage from '../pages/ProductPage';
 import About from '../pages/About';
+import Contact from '../pages/Contact';
+import Massage from '../components/Massage';
 
 const MainRouter = () => {
 	const PAGES = [
@@ -15,6 +17,9 @@ const MainRouter = () => {
 		{ path: '/admin', element: <Admin />, key: 4 },
 		{ path: '/sale', element: <Sale />, key: 5 },
 		{ path: '/:id/:product', element: <ProductPage />, key: 6 },
+		{ path: '/contact', element: <Contact />, key: 7 },
+		{ path: '/massage', element: <Massage />, key: 8 },
+
 	];
 	return (
 		<Routes>
