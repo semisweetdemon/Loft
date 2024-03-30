@@ -1,0 +1,126 @@
+#contact {
+	.path {
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	h1 {
+		padding: 40px 0 35px 0;
+		font-size: 24px;
+		font-weight: 400;
+	}
+	.contact {
+		display: flex;
+		align-items: flex-start;
+		gap: 10%;
+		@media (max-width: 1020px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			max-width: 460px;
+			width: 100%;
+			height: 400px;
+			.e-mail__name {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				@media (max-width: 526px) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				.name {
+					width: 100%;
+
+					input {
+						width: 100%;
+						height: 40px;
+						font-size: 16px;
+						padding: 0 20px;
+						outline: none;
+						border: 1px solid hsl(0, 0%, 85%);
+						background-color: #fff;
+					}
+				}
+			}
+			.massage {
+				width: 100%;
+
+				textarea {
+					width: 100%;
+					height: 150px;
+					padding: 5px 20px;
+					outline: none;
+					background-color: #fff;
+					border: 1px solid hsl(0, 0%, 85%);
+					resize: none;
+				}
+			}
+			.contact__btn {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				gap: 20px;
+				button {
+					max-width: 150px;
+					width: 100%;
+					height: 40px;
+					background-color: #fff;
+					box-shadow: 0 2px 2px 2px #f3f3f3;
+					border: transparent;
+					font-size: 16px;
+					font-weight: 300;
+					&:nth-child(2) {
+						max-width: 105px;
+						width: 100%;
+						background-color: #245462;
+						color: #fff;
+					}
+				}
+			}
+		}
+		&__adres {
+			max-width: 550px;
+			width: 100%;
+			.contact__icon {
+				width: 100%;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 35px;
+				@media (max-width: 526px) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				.icon {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					a {
+						font-size: 16px;
+						font-weight: 300;
+					}
+				}
+			}
+			h3 {
+				font-size: 16px;
+				font-weight: 300;
+				padding: 25px;
+				@media (max-width: 526px) {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+	}
+}

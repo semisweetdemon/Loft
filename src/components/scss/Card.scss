@@ -131,6 +131,10 @@
 			background: $main-color;
 			padding: 10px;
 			color: $light-gray;
+
+			&:active {
+				background-color: $about-line;
+			}
 		}
 	}
 

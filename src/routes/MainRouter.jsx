@@ -9,6 +9,8 @@ import About from '../pages/About';
 import Busket from '../pages/Busket';
 import Favorite from '../pages/Favorite';
 import Search from '../pages/Search';
+import Contact from '../pages/Contact';
+import Massage from '../components/Massage';
 
 const MainRouter = () => {
 	const PAGES = [
@@ -21,6 +23,8 @@ const MainRouter = () => {
 		{ path: '/busket', element: <Busket />, key: 7 },
 		{ path: '/favorite', element: <Favorite />, key: 8 },
 		{ path: '/search', element: <Search />, key: 9 },
+		{ path: '/contact', element: <Contact />, key: 10 },
+		{ path: '/massage', element: <Massage />, key: 11 },
 	];
 
 	return (
