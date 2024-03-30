@@ -1,0 +1,60 @@
+.massage {
+  .user {
+    width: 800px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .avatar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      h1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 34px;
+        color: #FFF;
+      }      
+    }
+    .person {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+
+      }
+      h3 {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 350;
+      }
+    }
+    .line {
+      width: 1px;
+      height: 50px;
+      background-color: #bebebe;
+    }
+    .chat {
+      h5 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14;
+        font-weight: 300;
+        width: 400px;
+        width: 60px;
+      }
+    }
+  }
+}
