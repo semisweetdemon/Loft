@@ -1,4 +1,10 @@
 .Product {
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
   &__add {
     max-width: 600px;
     width: 100%;

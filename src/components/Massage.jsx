@@ -27,17 +27,20 @@ const Massage = () => {
     <div className="massage">
       {
         massage.map((el, idx) => (
-          <div className="user" key={idx}>
-            <div className="avatar" style={{
-              background: randomColor()
-            }}>
-              <h1>{el.PersonName.slice(0, 1)}</h1>
-            </div>
-            <div className="person">
-              <h2>Имя: {el.PersonName.length > 15 ? el.PersonName.slice(0, 15) + "..." : el.PersonName}</h2>
-              <h3>E-maill: <Link>{el.PersonMail.length > 15 ? el.PersonMail.slice(0, 15) + "..." : el.PersonMail}</Link> </h3>
+          <div className="users" key={idx}>
+            <div className="user">
+              <div className="avatar" style={{
+                background: randomColor()
+              }}>
+                <h1>{el.PersonName.slice(0, 1)}</h1>
+              </div>
+              <div className="person">
+                <h2>Имя: {el.PersonName.length > 15 ? el.PersonName.slice(0, 15) + "..." : el.PersonName}</h2>
+                <h3>E-maill: <Link>{el.PersonMail.length > 15 ? el.PersonMail.slice(0, 15) + "..." : el.PersonMail}</Link> </h3>
+              </div>
             </div>
             <div className="line"></div>
+            <div className="chat__btn">
             <div className="chat">
               <h5>Cooбщение:</h5>
               <p>
@@ -48,6 +51,7 @@ const Massage = () => {
               <button onClick={() => {
                 deletMassage(el.id)
               }}>{remove}</button>
+            </div>
             </div>
           </div>
         ))
