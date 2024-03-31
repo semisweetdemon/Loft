@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import {remove} from "../components"
 const Massage = () => {
   const [massage, setMassage] = useState([])
   async function readMassage() {
@@ -18,6 +18,11 @@ const Massage = () => {
     }
     return color 
   }
+
+  const deletMassage = (async id => {
+    await axios.delete(`${'http://localhost:3000/massage'}/${id}`)
+    readMassage()
+  })
   return (
     <div className="massage">
       {
@@ -38,6 +43,11 @@ const Massage = () => {
               <p>
                 {el.PersMassage}
               </p>
+            </div>
+            <div className="btns">
+              <button onClick={() => {
+                deletMassage(el.id)
+              }}>{remove}</button>
             </div>
           </div>
         ))

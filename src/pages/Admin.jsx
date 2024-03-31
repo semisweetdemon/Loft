@@ -24,6 +24,7 @@ const Admin = () => {
 							Massage
 						</button>
 					</div>
+					<div className="line__big"></div>
 					<div className="to__do">
 						{' '}
 						<div

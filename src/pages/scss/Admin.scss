@@ -1,15 +1,17 @@
 #admin {
 	.admin {
+		max-width: 1480px;
 		width: 100%;
 		display: flex;
 		padding: 20px 0;
+		gap: 15px;
 		.zakladki {
 			width: 325px;
 			display: flex;
 			align-items: center;
 			flex-direction: column;
 			gap: 20px;
-			padding: 20px;
+			padding: 20px 0;
 
 			button {
 				width: 250px;
@@ -20,9 +22,15 @@
 
 			}
 		}
+		.line__big {
+			width: 1px;
+			height: 73vh;
+			background-color: #bebebe;
+		}
 		.to__do {
+			width: 100%;
 			.add__product {
-				width: 600px;
+				width: 100%;
 				display: none;
 			}
 			.massages {
