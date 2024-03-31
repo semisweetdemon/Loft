@@ -11,14 +11,14 @@ const Admin = () => {
 					<div className="zakladki">
 						<button
 							onClick={() => {
-								setOff(!off);
+								setOff(false);
 								console.log(off);
 							}}>
 							Add Product
 						</button>
 						<button
 							onClick={() => {
-								setOff(!off);
+								setOff(true);
 								console.log(off);
 							}}>
 							Massage

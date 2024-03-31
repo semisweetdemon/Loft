@@ -1,4 +1,7 @@
 .massage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   .user {
     width: 800px;
     display: flex;
@@ -22,15 +25,25 @@
       }      
     }
     .person {
+      width: 180px;
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
       gap: 5px;
       h2 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         font-size: 20px;
         font-weight: 400;
-
+        
+      }
+      a {
+        color: #0313ff;
+        &:hover {
+          text-decoration: underline;
+        }
       }
       h3 {
         display: flex;
@@ -53,7 +66,6 @@
         font-size: 14;
         font-weight: 300;
         width: 400px;
-        width: 60px;
       }
     }
   }

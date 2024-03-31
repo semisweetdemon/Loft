@@ -1,687 +1,699 @@
 {
-	"users": [
-		{
-			"id": "1",
-			"email": "max@mail.ru",
-			"name": "Ravhan",
-			"surname": "Bakytbekov",
-			"phone": "+996706099066",
-			"adress": {
-				"city": "Bishkek",
-				"street": "Altyn-kazyk",
-				"home": "9"
-			},
-			"order": [],
-			"busketAndFavorite": [
-				{
-					"id": 1711346013668,
-					"count": 1,
-					"busket": false,
-					"favorite": true
-				},
-				{
-					"id": 1711346273401,
-					"count": 1,
-					"busket": false,
-					"favorite": true
-				},
-				{
-					"id": 1711705916464,
-					"count": 8,
-					"busket": true,
-					"favorite": false
-				},
-				{
-					"id": 1711706140658,
-					"count": 1,
-					"busket": false,
-					"favorite": true
-				},
-				{
-					"id": 1711706457530,
-					"count": 1,
-					"busket": false,
-					"favorite": true
-				},
-				{
-					"id": 1711706600198,
-					"count": 10,
-					"busket": true,
-					"favorite": true
-				},
-				{
-					"id": 1711706894281,
-					"count": 1,
-					"busket": true,
-					"favorite": true
-				},
-				{
-					"id": 1711707058340,
-					"count": 1,
-					"busket": true,
-					"favorite": true
-				},
-				{
-					"id": 1711710287400,
-					"count": 4,
-					"busket": true,
-					"favorite": true
-				},
-				{
-					"id": 1711719891638,
-					"count": 6,
-					"busket": true,
-					"favorite": false
-				},
-				{
-					"id": 1711724581042,
-					"count": 2,
-					"busket": true,
-					"favorite": false
-				}
-			],
-			"point": 500
-		}
-	],
-	"products": [
-		{
-			"categoryName": "Кухня",
-			"categoryIconName": "kitchen",
-			"path": "/kitchen",
-			"categoryProducts": [
-				{
-					"parent": "/kitchen",
-					"image": "https://kupe116.ru/images/fotos/kuhni/kf100-m.jpg",
-					"name": "Loft Velvet Dark Gray",
-					"color": "dark gray",
-					"price": "4500",
-					"sale": "0",
-					"subcategory": "Кухонная гарнитура",
-					"description": "Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это кухонный гарнитур Velvet. Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – Velvet просто создан для размеренного отдыха в кругу семьи или компании друзей!",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711345366895
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://kupe116.ru/images/fotos/kuhni/kf104.jpg",
-					"name": "Loft Velvet Dark",
-					"color": "dark",
-					"price": "5000",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это кухонный гарнитур Velvet. Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – Velvet просто создан для размеренного отдыха в кругу семьи или компании друзей!",
-					"count": 1,
-					"favorite": true,
-					"busket": false,
-					"id": 1711346013668
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://kupe116.ru/images/fotos/kuhni/kf106.jpg",
-					"name": "Кухонная гарнитура угловая",
-					"color": "white",
-					"price": "1000",
-					"sale": "5",
-					"subcategory": "Кухонная гарнитура угловая",
-					"description": "Угловая кухня – это кухонный гарнитур, размещающийся вдоль двух или трех стен, образуя один или два угла. В гарнитур входят, как правило, тумбы, ящики и шкафчики, открытого и закрытого типа, а также встроенная бытовая техника: как минимум плита, а иногда – посудомоечная или стиральная машина и так далее.",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711346177834
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://dyatkovo.ru/upload/iblock/568/jp4x191x6f6tqef6elkcbmxgfmwsv2cy.jpg",
-					"name": "Antella",
-					"color": "Gray",
-					"price": "3500",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Дизайн коллекции ANTELLA, построенный на сочетании трендовых текстур дерева и бетона, фактурных поверхностей и графичных элементов, служит отсылкой к современной минималистичной эстетике большого города. Это функциональный интерьер без визуального шума, который умеет быть разным и подстраиваться под вкусы и привычки своих хозяев.",
-					"count": 1,
-					"favorite": true,
-					"busket": true,
-					"id": 1711346273401
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCCbGPhX1CQrfpBofbIQJm9NHMlOOqI6IXtI9ZaA0WqTjEzXXVb42XW6XrH5Kwqn4dt24&usqp=CAU",
-					"name": "Canti",
-					"color": "Light Gray",
-					"price": "2400",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Авторский дизайн CANTI, сочетающий в себе черты неоклассики и современного стиля, легко адаптируется под разные задачи. Эта кухня может стать пространством экспериментов для тех, кто следует самым актуальным трендам интерьерной моды, или окружить вас гармонией и уютом, которые так ценят любители благородной неоклассики.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711705916464
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://dyatkovo.ru/upload/iblock/cd6/cd6f2fb801dfd48d56e590a31dffe4e2.jpg",
-					"name": "Kantri",
-					"color": "white",
-					"price": "4000",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Изящная неоклассика получает новое прочтение. Она выглядит стильно и торжественно благодаря металлическим элементам и выразительным природным текстурам. Чтобы приковывать взгляды, кухне KANTRI не нужны яркие цвета и обилие декора. Несколько штрихов – и она безупречна.\n",
-					"count": 1,
-					"favorite": true,
-					"busket": false,
-					"id": 1711706140658
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/d64/800_600_1/d647668156887f0534030c97bf3015aa.JPG",
-					"name": "Uniline",
-					"color": "Indigo",
-					"price": "6800",
-					"sale": "10",
-					"subcategory": "Кухня",
-					"description": "Коллекция UNILINE создана для поклонников современного дизайна. Ее главные достоинства – это фасады с матовой поверхностью в выразительных оттенках, четкая линейность благодаря контрастному цветовому решению интегрированной J-ручки, а также комбинация сплошных фасадов и витрин с тонированным стеклом Dark Grey, которая делает дизайн необычным и привлекающим внимание.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711706457530
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://www.kuhnipark.ru/upload/resize_cache/iblock/517/800_530_1/517f9ec1e53cb15ac014efb1b541a493.jpg",
-					"name": "Terra",
-					"color": "Blue graphite",
-					"price": "4500",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Коллекция TERRA – прекрасный выбор для тех, кто хочет придать своей кухне яркую индивидуальность. Ее рамочные фасады выполнены в модных оттенках матовых эмалей, а также могут быть окрашены в любой цвет по индивидуальному заказу и скомбинированы с древесными текстурами. Шкафы-витрины с серым сатинированным, фигурным или матовым стеклом на выбор делают пространство легким и воздушным, а элементы с отделкой «матовое золото» придают кухне особое благородство.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711706600198
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://dyatkovo.ru/upload/iblock/28c/28c605bc2f40765251661a6591b2799e.jpg",
-					"name": "Barolo",
-					"color": "Blue graphite and Indigo",
-					"price": "2200",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Дизайнерскими особенностями коллекции со скругленными, плавными линиями радиусных фасадов BAROLO являются тактильные древесные текстуры, возможность окрашивания фасадов в любой выбранный цвет палитры RAL и их комбинирования с фасадами-компаньонами в отделке пластиком. Разнообразие комбинаций BAROLO позволяет создать очень разные по настроению и характеру интерьеры.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711706894281
-				},
-				{
-					"parent": "/kitchen",
-					"image": "https://dyatkovo.ru/upload/iblock/a19/a19dc08b947a25e1c9a884856ce6b61e.jpg",
-					"name": "Greco",
-					"color": "Sable Caffarella",
-					"price": "1900",
-					"sale": "0",
-					"subcategory": "Кухня",
-					"description": "Дизайн GRECO строится на выразительности форм, подчеркнутых текстурами дерева, камня и металла. Эта коллекция подойдет тем, кто ценит свободу и независимость, поскольку в ней заложены природная естественность и широчайший выбор функциональных, композиционных и цветовых решений.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711707058340
-				}
-			],
-			"id": "8bad"
-		},
-		{
-			"categoryName": "Спальни",
-			"categoryIconName": "bedroom",
-			"path": "/bedroom",
-			"categoryProducts": [
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/913/580_580_1/rhu46g6s5qvjxl1hdak6aq6jyicbgbi3.jpg",
-					"name": "Monako",
-					"color": "Cashmere",
-					"price": "700",
-					"sale": "0",
-					"subcategory": "Шкаф",
-					"description": "Наполнение двухдверного шкафа MONAKO представляет собой две полки, к нижней из которых крепится штанга для вешалок. Фасады изделия выполнены в отделке премиальной шелковой эмалью, один из них декорирован вставкой из натурального шпона. Корпус шкафа выполнен в текстуре Шенилл, имитирующей натуральную ткань.\nВ комплектацию включен встроенный светильник, который включается автоматически при открывании дверей.",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711707362514
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/c4a/580_580_1/c4af014ea4fe51fe827d3e109a363126.jpg",
-					"name": "York",
-					"color": "Aurora Sand",
-					"price": "1999",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Кровать YORK в полностью мягком текстильном корпусе выполнена в отделке искусственной замшей с эффектом safe touch. Благодаря мягкому наполнителю изголовья любители чтения перед сном и сериалов смогут расположиться с комфортом. Прочная решетка основания чувствительна к нагрузке, что усиливает ортопедический эффект матраса. Механизм имеет высокий угол подъема для удобства доступа к бельевому ящику, работает бесшумно и рассчитан на 10 тыс. циклов. Ящик разделен на два отделения для удобного хранения вещей.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711707543060
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/061/580_580_1/sj81os5bdmzoe0ip1bpup96ipqkk865y.jpg",
-					"name": "Esido",
-					"color": "Velutto 08",
-					"price": "600",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Дизайнерской особенностью кровати ESIDO является стильная объемная стежка, которой декорировано не только изголовье, но и изножье. Модель выполнена в отделке тактильной шелковистой тканью с эффектом дорогой матовой фактуры, что делает взаимодействие с мебелью особенно приятным.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711707829347
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/1fa/580_580_1/dmzzy6dz713x82z0cxrzlz03mltua94d.jpg",
-					"name": "Effecto",
-					"color": "Velutto 19",
-					"price": "700",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Традиционная классическая или современная спальня, исполнение в спокойной гамме или акцентных тонах – лаконичная кровать EFFECTO в отделке велюром легко подстраивается под любые интерьерные идеи и может располагаться в любом месте комнаты благодаря тканевой отделке обратной стороны изголовья. Ее высокие ножки не препятствуют перемещению робота-пылесоса.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711708069316
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/bdb/580_580_1/xlght3w4hskzgnp7zoet2t0v4qa78abq.jpg",
-					"name": "Fonte",
-					"color": "Velutto 32",
-					"price": "500",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Кровать FONTE оснащена высоким фигурным изголовьем, которое придает интерьеру выразительный стилистический акцент. Шелковистый материал обивки имеет матовую фактуру, выглядит роскошно и элегантно. Модель обладает высоким запасом прочности благодаря массивному основанию и предусматривает вместительный ящик для хранения.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711708298854
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/2ca/580_580_1/oeitw6w628obkjlx9mokvc2ed2jwaeuo.jpg",
-					"name": "Fonte 16",
-					"color": "Velutto 16",
-					"price": "500",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Кровать FONTE оснащена высоким фигурным изголовьем, которое придает интерьеру выразительный стилистический акцент. Шелковистый материал обивки имеет матовую фактуру, выглядит роскошно и элегантно. Модель обладает высоким запасом прочности благодаря массивному основанию и предусматривает вместительный ящик для хранения.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711708467902
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/3fe/580_580_1/mcclvqby1162jm289kxv7hzwiapf8iey.jpg",
-					"name": "Tewin",
-					"color": "Light coffee",
-					"price": "1181",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Кровать TEWIN выполнена в полностью мягком текстильном корпусе из рогожки, а ее изголовье оснащено необычными подушками, расположенными под углом, на которые удобно облокотиться, отдыхая за чтением или просмотром сериала.\nСкругленные углы основания обеспечивают безопасность использования, а дизайн с высокими ножными опорами не создает препятствий при уборке с помощью робота-пылесоса.  \nМеталлическое основание гарантирует прочность и долговечность конструкции. Матрас располагается на сплошной ровной горизонтальной подложке из ЛДСП, что максимально реализует его полезные свойства и продлевает срок службы.\nКровать оснащена вместительным бельевым ящиком, разделенным на две части. Подъемный механизм включен в комплектацию изделия.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711708877963
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/57e/580_580_1/n8q56vv462sxxqt2imgv9c2j9hglibuz.jpg",
-					"name": "Тумба Tempera",
-					"color": "Cappuccino",
-					"price": "200",
-					"sale": "0",
-					"subcategory": "тумба",
-					"description": "Прикроватная тумба TEMPERA оснащена двумя выдвижными ящиками, которые движутся легко и плавно благодаря направляющим скрытого монтажа европейского производства. Накладные ручки изготовлены из металла в отделке Никель матовый. Регулируемые в диапазоне до 10 мм опоры обеспечивают устойчивость и равномерное распределение нагрузки, способствующее увеличению срока службы мебели.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711709182444
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/3e4/580_580_1/3e42eafaa9c34a47d13b34adc61c782a.jpg",
-					"name": "Шкаф Tempera",
-					"color": "Сappuccino",
-					"price": "350",
-					"sale": "0",
-					"subcategory": "Шкаф",
-					"description": "Внутреннее пространство двухдверного шкафа TEMPERA оборудовано двумя полками и штангой для вешалок. Накладные ручки изготовлены из металла в отделке Никель матовый. Регулируемые в диапазоне до 10 мм опоры обеспечивают устойчивость и равномерное распределение нагрузки, способствующее увеличению срока службы мебели.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711709408875
-				},
-				{
-					"parent": "/bedroom",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/f98/580_580_1/pfnnukdogr7yfbpn81pd8k5thue3zt2u.jpg",
-					"name": "Plisse",
-					"color": "Orange",
-					"price": "1200",
-					"sale": "0",
-					"subcategory": "Кровать",
-					"description": "Высокое драпированное изголовье кровати PLISSE в полностью мягком текстильном корпусе, выполненном из нежного микровелюра, словно «обнимает», образуя уютное пространство, защищенное от сквозняков. Скругленные углы кровати обеспечивают безопасность использования, а высокие ножки не создают препятствий при уборке с помощью робота-пылесоса.\nКровать имеет металлическое основание, что гарантирует прочность и долговечность конструкции. Сплошное основание под матрас максимально реализует его полезные свойства и продлевает срок службы.\nКровать оснащена вместительным бельевым ящиком, разделенным на две части. Подъемный механизм включен в комплектацию изделия.\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711709637538
-				}
-			],
-			"id": "0099"
-		},
-		{
-			"categoryName": "Гостинные",
-			"categoryIconName": "hall",
-			"path": "/hall",
-			"categoryProducts": [
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/588/580_580_1/5883f16d21aed3f334a817b82aa5faf7.jpg",
-					"name": "Luna ",
-					"color": "Roxy",
-					"price": "210",
-					"sale": "0",
-					"subcategory": "Навесной шкаф",
-					"description": "Навесной шкаф LUNA глубиной 42,5 см и шириной 170,1 см с корпусом в текстуре Дуб Anziano оснащен тремя выдвижными ящиками с интегрированными J-ручками.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711710078134
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/449/580_580_1/449dabab258800b2fe23473f3606d299.jpg",
-					"name": "Luna left",
-					"color": "Roxy",
-					"price": "200",
-					"sale": "0",
-					"subcategory": "Навесной шкаф",
-					"description": "Навесной шкаф LUNA глубиной 42,5 см и шириной 95,1 см с корпусом в текстуре Дуб Anziano оснащен выдвижным ящиком и двумя распашными фасадами с интегрированными J-ручками. За одним из фасадов расположена полка из ЛДСП. Элемент имеет как правое, так и левое исполнение.\n\n",
-					"count": 1,
-					"favorite": true,
-					"busket": false,
-					"id": 1711710287400
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/221/580_580_1/9vq20xruvcb3imoe3hwdq2dodtw2ur6z.jpg",
-					"name": "Luna top",
-					"color": "Anziano",
-					"price": "300",
-					"sale": "0",
-					"subcategory": "Навесной шкаф",
-					"description": "Навесной шкаф LUNA глубиной 34 см и шириной 170,1 см с корпусом в текстуре Дуб Anziano оснащен тремя распашными фасадами с интегрированными J-ручками и тонированным стеклом. За фасадами расположены полки из ЛДСП. В качестве опции доступна система подсветки (заказывается отдельно).\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711711529941
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/799/580_580_1/rjof60iq6rqzg5uy6qofiwhxdemhmb3s.jpg",
-					"name": "Шкаф витрина Merano",
-					"color": "Monfort White",
-					"price": "800",
-					"sale": "0",
-					"subcategory": "Шкаф-витрина",
-					"description": "Шкаф MERANO оснащен комбинированным фасадом П-образной формы с закаленным тонированным стеклом Dark Grey, которое переходит с фронтальной части на боковую. За вставкой из стекла располагаются две стеклянные полки, за сплошными фасадами – полки из ЛДСП. Внутри шкафа также располагается врезная система подсветки. Предусмотрен выбор системы включения/выключения с ножным выключателем или пультом (заказывается отдельно). Модель может иметь как правое, так и левое открывание.\n\n",
-					"count": 6,
-					"favorite": false,
-					"busket": true,
-					"id": 1711719891638
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/1d5/580_580_1/1d5fc48027f0a84ac9e3b292669cc57a.jpg",
-					"name": "Стеллаж Merano",
-					"color": "Monfort",
-					"price": "400",
-					"sale": "0",
-					"subcategory": "Стеллаж",
-					"description": "Стеллажная система MERANO используется в качестве приставного элемента в композиции с ТВ-тумбой и при желании может быть дополнена навесными шкафами. Возможна сборка стеллажа в зеркальном исполнении.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711723272099
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/871/580_580_1/47y5qvivhbefpv2hpphnsv8xdbpjsddo.jpg",
-					"name": "Тумба под TV Merano",
-					"color": "Monfort white",
-					"price": "600",
-					"sale": "0",
-					"subcategory": "Тумба",
-					"description": "Центральное отделение ТВ-тумбы MERANO представляет собой выдвижной ящик с трендовой формой боковины в отделке внутренней текстурой Шенилл, имитирующей натуральную ткань. Над ним располагается открытая ниша для аппаратуры. По обеим сторонам от него располагаются секции, оснащенные распашными фасадами и полками.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711723449332
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/1c6/580_580_1/k4odpfkiu4d5t1si1447xsyujix1f383.jpg",
-					"name": "Шкаф-витрина с ящиками Turin",
-					"color": "White / Laguna",
-					"price": "400",
-					"sale": "0",
-					"subcategory": "Шкаф-витрина",
-					"description": "Нижнюю часть шкафа-витрины TURIN занимают два выдвижных ящика, фасады которых выполнены в отделке премиальной эмалью оттенка Laguna с шелковистой поверхностью. Две верхние секции оснащены стеклянными фасадами в алюминиевой рамке с системой открывания Push-to-Open, за которыми находятся полки из тонированного стекла. Возможна навеска дверей как на левую, так и на правую сторону. Ножки и световое оборудование заказываются отдельно, благодаря чему можно придать мебели индивидуальный стиль.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711723788930
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/13c/580_580_1/wx7tin0i4l2g7smg9aeaomn6k40rr1yw.jpg",
-					"name": "Полка Turin",
-					"color": "White",
-					"price": "100",
-					"sale": "0",
-					"subcategory": "Полка",
-					"description": "Надежная навесная полка Turin с перегородками рассчитана на нагрузку до 20 кг. Крепления входят в комплектацию.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711724581042
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/765/580_580_1/cx3h0jvhpecbyi0hokcoem8foq3a9ynn.jpg",
-					"name": "Стол журнальный Turin",
-					"color": "White",
-					"price": "99",
-					"sale": "0",
-					"subcategory": "Журнальный стол",
-					"description": "Основанием журнального стола Turin, оборудованного полкой, служит металлическая опора в коричневом цвете.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711724763807
-				},
-				{
-					"parent": "/hall",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/e5b/580_580_1/e5bdd16e9875ea6a5d8fb1a235b854df.jpg",
-					"name": "Тумба под ТВ SAVONA",
-					"color": "Salerno / Black Brown",
-					"price": "600",
-					"sale": "0",
-					"subcategory": "Тумба",
-					"description": "Глянцевые фасады тумб выполнены методом окутывания и не имеют острых кромок, что повышает долговечность и безопасность использования. Благодаря качественным направляющим европейского производства ящики открываются и закрываются плавно и бесшумно. Металлические ручки с гальваническим покрытием сохраняют безупречный внешний вид на протяжении всего срока службы. Применение светильников европейского производства придает дополнительную эстетическую изюминку восприятия гостиной. Возможно дополнительное оснащение тумбы зарядным USB устройством с двумя разъемами (заказывается отдельно).\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711725062703
-				}
-			],
-			"id": "14ab"
-		},
-		{
-			"categoryName": "Прихожие",
-			"categoryIconName": "hallways",
-			"path": "/hallways",
-			"categoryProducts": [
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/456/580_580_1/luhlovd66hkm941wfyuc82rhjdvwzwue.jpg",
-					"name": "Панель с зеркалом BRUNO",
-					"color": "",
-					"price": "140",
-					"sale": "0",
-					"subcategory": "Зеркало",
-					"description": "Универсальное зеркало BRUNO без внешней рамы с надежным креплением к стене может использоваться как в комбинации со шкафами и тумбами, так и в качестве отдельного элемента интерьера. Зеркало без тонировки. Крепления входят в комплектацию.\n\n",
-					"count": 3,
-					"favorite": false,
-					"busket": true,
-					"id": 1711725442844
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/1a9/580_580_1/yrnpc1u6ubcopocn9zzyi11r2em0rlia.jpg",
-					"name": "Вешалка с мягким элементом BRUNO",
-					"color": "Velutto 16",
-					"price": "150",
-					"sale": "0",
-					"subcategory": "Вешалки",
-					"description": "Мягкая настенная панель BRUNO с крючками темно-коричневого цвета выполнена в отделке велюром и декорирована вертикальной прострочкой. Ткань обладает приятными тактильными свойствами, повышенной износостойкостью и плотностью (антикоготь). Крепления входят в комплектацию.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711725830685
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/afa/580_580_1/bjy0t5ftq0h9hzo0m8swk3caxcj4qfha.jpg",
-					"name": "Однодверный шкаф с зеркалом Bruno",
-					"color": "Black",
-					"price": "400",
-					"sale": "0",
-					"subcategory": "Шкаф",
-					"description": "За зеркальным фасадом однодверного шкафа BRUNO располагается система полок. Шкаф оснащается накладной ручкой черного цвета. Возможно исполнение как с правым, так и с левым открыванием.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711726131624
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/b3e/580_580_1/b3ea720dedf6e55e7cbea5c1d28a0fc4.jpg",
-					"name": "Шкаф с зеркалом Elegante",
-					"color": "Latte",
-					"price": "700",
-					"sale": "0",
-					"subcategory": "Шкаф",
-					"description": "Широчайший ассортимент ELEGANTE включает различные модели шкафов нескольких типоразмеров, которые помогают рационально использовать каждый квадратный сантиметр пространства. Разнообразие текстур делает каждый интерьер уникальным и неповторимым. Коллекция предусматривает возможность оснащения мебельных элементов системами плавного закрывания дверей.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711726257424
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/443/580_580_1/44306dfa45052fd09e7047df591e850d.jpg",
-					"name": "Панель с зеркалом Elegante",
-					"color": "Latte",
-					"price": "500",
-					"sale": "0",
-					"subcategory": "Зеркало",
-					"description": "Зеркальные панели Elegante – настоящая находка для интерьера. Помимо своего прямого назначения, они увеличивают освещенность помещения за счет отраженного света и зрительно расширяют пространство. Зеркало без тонировки. Крепления входят в комплектацию.",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711726369162
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/088/580_580_1/088d6f2794b9e5576679e181680e8370.jpg",
-					"name": "Тумба под обувь Elegante",
-					"color": "Latte",
-					"price": "600",
-					"sale": "0",
-					"subcategory": "Тумба",
-					"description": "Тумбы для обуви различных габаритов позволяют создать систему хранения, которая идеально впишется в интерьер помещения любой площади и конфигурации – от небольшой прихожей до просторного холла загородного дома.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711726535270
-				},
-				{
-					"parent": "/hallways",
-					"image": "https://dyatkovo.ru/upload/resize_cache/iblock/5ad/580_580_1/5ade2fbfbae5e1a24dcbcd2d44c881c7.jpg",
-					"name": "Вешалка Elegante",
-					"color": "Latte",
-					"price": "50",
-					"sale": "0",
-					"subcategory": "Вешалки",
-					"description": "Удобные вешалки Elegante – прекрасное решение для хранения повседневной верхней одежды, которую вы привыкли иметь под рукой. Вешалка может быть доукомплектована тумбой с выдвижными ящиками и открытой полкой для головных уборов. Крепления входят в комплектацию.\n\n",
-					"count": 1,
-					"favorite": false,
-					"busket": false,
-					"id": 1711726630610
-				}
-			],
-			"id": "50f2"
-		},
-		{
-			"categoryName": "Офисная мебель",
-			"categoryIconName": "office",
-			"path": "/office",
-			"categoryProducts": [],
-			"id": "16fd"
-		},
-		{
-			"categoryName": "Детская",
-			"categoryIconName": "children",
-			"path": "/children",
-			"categoryProducts": [],
-			"id": "1c2b"
-		},
-		{
-			"categoryName": "Матрасы",
-			"categoryIconName": "mattress",
-			"path": "/mattress",
-			"categoryProducts": [],
-			"id": "c6d9"
-		},
-		{
-			"categoryName": "Мягкая мебель",
-			"categoryIconName": "furniture",
-			"path": "/furniture",
-			"categoryProducts": [],
-			"id": "cf2e"
-		},
-		{
-			"categoryName": "Шкафы",
-			"categoryIconName": "cupboard",
-			"path": "/cupboard",
-			"categoryProducts": [],
-			"id": "2186"
-		}
-	],
-	"massage": [
-		{
-			"id": 1711627332666,
-			"PersonName": "uytre",
-			"PersonMail": "kjhgfd",
-			"PersMassage": " nbvc"
-		},
-		{
-			"id": 1711791824240,
-			"PersonName": "Dgdfjfjdj",
-			"PersonMail": "fdhdfjdj@dthdfhd",
-			"PersMassage": "lkghfsdjkmnbfhdghd thdhdfghdh d dth dr hdh d"
-		}
-	]
+  "users": [
+    {
+      "id": "1",
+      "email": "max@mail.ru",
+      "name": "Ravhan",
+      "surname": "Bakytbekov",
+      "phone": "+996706099066",
+      "adress": {
+        "city": "Bishkek",
+        "street": "Altyn-kazyk",
+        "home": "9"
+      },
+      "order": [],
+      "busketAndFavorite": [
+        {
+          "id": 1711345366895,
+          "count": 1,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711346013668,
+          "count": 3,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711346273401,
+          "count": 1,
+          "busket": false,
+          "favorite": true
+        },
+        {
+          "id": 1711705916464,
+          "count": 8,
+          "busket": true,
+          "favorite": false
+        },
+        {
+          "id": 1711706140658,
+          "count": 1,
+          "busket": false,
+          "favorite": true
+        },
+        {
+          "id": 1711706457530,
+          "count": 1,
+          "busket": false,
+          "favorite": true
+        },
+        {
+          "id": 1711706600198,
+          "count": 10,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711706894281,
+          "count": 1,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711707058340,
+          "count": 1,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711710287400,
+          "count": 4,
+          "busket": true,
+          "favorite": true
+        },
+        {
+          "id": 1711719891638,
+          "count": 6,
+          "busket": true,
+          "favorite": false
+        },
+        {
+          "id": 1711724581042,
+          "count": 2,
+          "busket": true,
+          "favorite": false
+        },
+        {
+          "id": 1711725442844,
+          "count": 3,
+          "busket": true,
+          "favorite": false
+        }
+      ],
+      "point": 500
+    }
+  ],
+  "products": [
+    {
+      "categoryName": "Кухня",
+      "categoryIconName": "kitchen",
+      "path": "/kitchen",
+      "categoryProducts": [
+        {
+          "parent": "/kitchen",
+          "image": "https://kupe116.ru/images/fotos/kuhni/kf100-m.jpg",
+          "name": "Loft Velvet Dark Gray",
+          "color": "dark gray",
+          "price": "4500",
+          "sale": "0",
+          "subcategory": "Кухонная гарнитура",
+          "description": "Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это кухонный гарнитур Velvet. Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – Velvet просто создан для размеренного отдыха в кругу семьи или компании друзей!",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711345366895
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://kupe116.ru/images/fotos/kuhni/kf104.jpg",
+          "name": "Loft Velvet Dark",
+          "color": "dark",
+          "price": "5000",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это кухонный гарнитур Velvet. Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность, комфорт и функциональность, собранные воедино – Velvet просто создан для размеренного отдыха в кругу семьи или компании друзей!",
+          "count": 1,
+          "favorite": true,
+          "busket": false,
+          "id": 1711346013668
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://kupe116.ru/images/fotos/kuhni/kf106.jpg",
+          "name": "Кухонная гарнитура угловая",
+          "color": "white",
+          "price": "1000",
+          "sale": "5",
+          "subcategory": "Кухонная гарнитура угловая",
+          "description": "Угловая кухня – это кухонный гарнитур, размещающийся вдоль двух или трех стен, образуя один или два угла. В гарнитур входят, как правило, тумбы, ящики и шкафчики, открытого и закрытого типа, а также встроенная бытовая техника: как минимум плита, а иногда – посудомоечная или стиральная машина и так далее.",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711346177834
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://dyatkovo.ru/upload/iblock/568/jp4x191x6f6tqef6elkcbmxgfmwsv2cy.jpg",
+          "name": "Antella",
+          "color": "Gray",
+          "price": "3500",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Дизайн коллекции ANTELLA, построенный на сочетании трендовых текстур дерева и бетона, фактурных поверхностей и графичных элементов, служит отсылкой к современной минималистичной эстетике большого города. Это функциональный интерьер без визуального шума, который умеет быть разным и подстраиваться под вкусы и привычки своих хозяев.",
+          "count": 1,
+          "favorite": true,
+          "busket": true,
+          "id": 1711346273401
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCCbGPhX1CQrfpBofbIQJm9NHMlOOqI6IXtI9ZaA0WqTjEzXXVb42XW6XrH5Kwqn4dt24&usqp=CAU",
+          "name": "Canti",
+          "color": "Light Gray",
+          "price": "2400",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Авторский дизайн CANTI, сочетающий в себе черты неоклассики и современного стиля, легко адаптируется под разные задачи. Эта кухня может стать пространством экспериментов для тех, кто следует самым актуальным трендам интерьерной моды, или окружить вас гармонией и уютом, которые так ценят любители благородной неоклассики.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711705916464
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://dyatkovo.ru/upload/iblock/cd6/cd6f2fb801dfd48d56e590a31dffe4e2.jpg",
+          "name": "Kantri",
+          "color": "white",
+          "price": "4000",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Изящная неоклассика получает новое прочтение. Она выглядит стильно и торжественно благодаря металлическим элементам и выразительным природным текстурам. Чтобы приковывать взгляды, кухне KANTRI не нужны яркие цвета и обилие декора. Несколько штрихов – и она безупречна.\n",
+          "count": 1,
+          "favorite": true,
+          "busket": false,
+          "id": 1711706140658
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/d64/800_600_1/d647668156887f0534030c97bf3015aa.JPG",
+          "name": "Uniline",
+          "color": "Indigo",
+          "price": "6800",
+          "sale": "10",
+          "subcategory": "Кухня",
+          "description": "Коллекция UNILINE создана для поклонников современного дизайна. Ее главные достоинства – это фасады с матовой поверхностью в выразительных оттенках, четкая линейность благодаря контрастному цветовому решению интегрированной J-ручки, а также комбинация сплошных фасадов и витрин с тонированным стеклом Dark Grey, которая делает дизайн необычным и привлекающим внимание.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711706457530
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://www.kuhnipark.ru/upload/resize_cache/iblock/517/800_530_1/517f9ec1e53cb15ac014efb1b541a493.jpg",
+          "name": "Terra",
+          "color": "Blue graphite",
+          "price": "4500",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Коллекция TERRA – прекрасный выбор для тех, кто хочет придать своей кухне яркую индивидуальность. Ее рамочные фасады выполнены в модных оттенках матовых эмалей, а также могут быть окрашены в любой цвет по индивидуальному заказу и скомбинированы с древесными текстурами. Шкафы-витрины с серым сатинированным, фигурным или матовым стеклом на выбор делают пространство легким и воздушным, а элементы с отделкой «матовое золото» придают кухне особое благородство.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711706600198
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://dyatkovo.ru/upload/iblock/28c/28c605bc2f40765251661a6591b2799e.jpg",
+          "name": "Barolo",
+          "color": "Blue graphite and Indigo",
+          "price": "2200",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Дизайнерскими особенностями коллекции со скругленными, плавными линиями радиусных фасадов BAROLO являются тактильные древесные текстуры, возможность окрашивания фасадов в любой выбранный цвет палитры RAL и их комбинирования с фасадами-компаньонами в отделке пластиком. Разнообразие комбинаций BAROLO позволяет создать очень разные по настроению и характеру интерьеры.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711706894281
+        },
+        {
+          "parent": "/kitchen",
+          "image": "https://dyatkovo.ru/upload/iblock/a19/a19dc08b947a25e1c9a884856ce6b61e.jpg",
+          "name": "Greco",
+          "color": "Sable Caffarella",
+          "price": "1900",
+          "sale": "0",
+          "subcategory": "Кухня",
+          "description": "Дизайн GRECO строится на выразительности форм, подчеркнутых текстурами дерева, камня и металла. Эта коллекция подойдет тем, кто ценит свободу и независимость, поскольку в ней заложены природная естественность и широчайший выбор функциональных, композиционных и цветовых решений.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711707058340
+        }
+      ],
+      "id": "8bad"
+    },
+    {
+      "categoryName": "Спальни",
+      "categoryIconName": "bedroom",
+      "path": "/bedroom",
+      "categoryProducts": [
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/913/580_580_1/rhu46g6s5qvjxl1hdak6aq6jyicbgbi3.jpg",
+          "name": "Monako",
+          "color": "Cashmere",
+          "price": "700",
+          "sale": "0",
+          "subcategory": "Шкаф",
+          "description": "Наполнение двухдверного шкафа MONAKO представляет собой две полки, к нижней из которых крепится штанга для вешалок. Фасады изделия выполнены в отделке премиальной шелковой эмалью, один из них декорирован вставкой из натурального шпона. Корпус шкафа выполнен в текстуре Шенилл, имитирующей натуральную ткань.\nВ комплектацию включен встроенный светильник, который включается автоматически при открывании дверей.",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711707362514
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/c4a/580_580_1/c4af014ea4fe51fe827d3e109a363126.jpg",
+          "name": "York",
+          "color": "Aurora Sand",
+          "price": "1999",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Кровать YORK в полностью мягком текстильном корпусе выполнена в отделке искусственной замшей с эффектом safe touch. Благодаря мягкому наполнителю изголовья любители чтения перед сном и сериалов смогут расположиться с комфортом. Прочная решетка основания чувствительна к нагрузке, что усиливает ортопедический эффект матраса. Механизм имеет высокий угол подъема для удобства доступа к бельевому ящику, работает бесшумно и рассчитан на 10 тыс. циклов. Ящик разделен на два отделения для удобного хранения вещей.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711707543060
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/061/580_580_1/sj81os5bdmzoe0ip1bpup96ipqkk865y.jpg",
+          "name": "Esido",
+          "color": "Velutto 08",
+          "price": "600",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Дизайнерской особенностью кровати ESIDO является стильная объемная стежка, которой декорировано не только изголовье, но и изножье. Модель выполнена в отделке тактильной шелковистой тканью с эффектом дорогой матовой фактуры, что делает взаимодействие с мебелью особенно приятным.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711707829347
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/1fa/580_580_1/dmzzy6dz713x82z0cxrzlz03mltua94d.jpg",
+          "name": "Effecto",
+          "color": "Velutto 19",
+          "price": "700",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Традиционная классическая или современная спальня, исполнение в спокойной гамме или акцентных тонах – лаконичная кровать EFFECTO в отделке велюром легко подстраивается под любые интерьерные идеи и может располагаться в любом месте комнаты благодаря тканевой отделке обратной стороны изголовья. Ее высокие ножки не препятствуют перемещению робота-пылесоса.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711708069316
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/bdb/580_580_1/xlght3w4hskzgnp7zoet2t0v4qa78abq.jpg",
+          "name": "Fonte",
+          "color": "Velutto 32",
+          "price": "500",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Кровать FONTE оснащена высоким фигурным изголовьем, которое придает интерьеру выразительный стилистический акцент. Шелковистый материал обивки имеет матовую фактуру, выглядит роскошно и элегантно. Модель обладает высоким запасом прочности благодаря массивному основанию и предусматривает вместительный ящик для хранения.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711708298854
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/2ca/580_580_1/oeitw6w628obkjlx9mokvc2ed2jwaeuo.jpg",
+          "name": "Fonte 16",
+          "color": "Velutto 16",
+          "price": "500",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Кровать FONTE оснащена высоким фигурным изголовьем, которое придает интерьеру выразительный стилистический акцент. Шелковистый материал обивки имеет матовую фактуру, выглядит роскошно и элегантно. Модель обладает высоким запасом прочности благодаря массивному основанию и предусматривает вместительный ящик для хранения.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711708467902
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/3fe/580_580_1/mcclvqby1162jm289kxv7hzwiapf8iey.jpg",
+          "name": "Tewin",
+          "color": "Light coffee",
+          "price": "1181",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Кровать TEWIN выполнена в полностью мягком текстильном корпусе из рогожки, а ее изголовье оснащено необычными подушками, расположенными под углом, на которые удобно облокотиться, отдыхая за чтением или просмотром сериала.\nСкругленные углы основания обеспечивают безопасность использования, а дизайн с высокими ножными опорами не создает препятствий при уборке с помощью робота-пылесоса.  \nМеталлическое основание гарантирует прочность и долговечность конструкции. Матрас располагается на сплошной ровной горизонтальной подложке из ЛДСП, что максимально реализует его полезные свойства и продлевает срок службы.\nКровать оснащена вместительным бельевым ящиком, разделенным на две части. Подъемный механизм включен в комплектацию изделия.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711708877963
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/57e/580_580_1/n8q56vv462sxxqt2imgv9c2j9hglibuz.jpg",
+          "name": "Тумба Tempera",
+          "color": "Cappuccino",
+          "price": "200",
+          "sale": "0",
+          "subcategory": "тумба",
+          "description": "Прикроватная тумба TEMPERA оснащена двумя выдвижными ящиками, которые движутся легко и плавно благодаря направляющим скрытого монтажа европейского производства. Накладные ручки изготовлены из металла в отделке Никель матовый. Регулируемые в диапазоне до 10 мм опоры обеспечивают устойчивость и равномерное распределение нагрузки, способствующее увеличению срока службы мебели.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711709182444
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/3e4/580_580_1/3e42eafaa9c34a47d13b34adc61c782a.jpg",
+          "name": "Шкаф Tempera",
+          "color": "Сappuccino",
+          "price": "350",
+          "sale": "0",
+          "subcategory": "Шкаф",
+          "description": "Внутреннее пространство двухдверного шкафа TEMPERA оборудовано двумя полками и штангой для вешалок. Накладные ручки изготовлены из металла в отделке Никель матовый. Регулируемые в диапазоне до 10 мм опоры обеспечивают устойчивость и равномерное распределение нагрузки, способствующее увеличению срока службы мебели.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711709408875
+        },
+        {
+          "parent": "/bedroom",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/f98/580_580_1/pfnnukdogr7yfbpn81pd8k5thue3zt2u.jpg",
+          "name": "Plisse",
+          "color": "Orange",
+          "price": "1200",
+          "sale": "0",
+          "subcategory": "Кровать",
+          "description": "Высокое драпированное изголовье кровати PLISSE в полностью мягком текстильном корпусе, выполненном из нежного микровелюра, словно «обнимает», образуя уютное пространство, защищенное от сквозняков. Скругленные углы кровати обеспечивают безопасность использования, а высокие ножки не создают препятствий при уборке с помощью робота-пылесоса.\nКровать имеет металлическое основание, что гарантирует прочность и долговечность конструкции. Сплошное основание под матрас максимально реализует его полезные свойства и продлевает срок службы.\nКровать оснащена вместительным бельевым ящиком, разделенным на две части. Подъемный механизм включен в комплектацию изделия.\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711709637538
+        }
+      ],
+      "id": "0099"
+    },
+    {
+      "categoryName": "Гостинные",
+      "categoryIconName": "hall",
+      "path": "/hall",
+      "categoryProducts": [
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/588/580_580_1/5883f16d21aed3f334a817b82aa5faf7.jpg",
+          "name": "Luna ",
+          "color": "Roxy",
+          "price": "210",
+          "sale": "0",
+          "subcategory": "Навесной шкаф",
+          "description": "Навесной шкаф LUNA глубиной 42,5 см и шириной 170,1 см с корпусом в текстуре Дуб Anziano оснащен тремя выдвижными ящиками с интегрированными J-ручками.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711710078134
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/449/580_580_1/449dabab258800b2fe23473f3606d299.jpg",
+          "name": "Luna left",
+          "color": "Roxy",
+          "price": "200",
+          "sale": "0",
+          "subcategory": "Навесной шкаф",
+          "description": "Навесной шкаф LUNA глубиной 42,5 см и шириной 95,1 см с корпусом в текстуре Дуб Anziano оснащен выдвижным ящиком и двумя распашными фасадами с интегрированными J-ручками. За одним из фасадов расположена полка из ЛДСП. Элемент имеет как правое, так и левое исполнение.\n\n",
+          "count": 1,
+          "favorite": true,
+          "busket": false,
+          "id": 1711710287400
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/221/580_580_1/9vq20xruvcb3imoe3hwdq2dodtw2ur6z.jpg",
+          "name": "Luna top",
+          "color": "Anziano",
+          "price": "300",
+          "sale": "0",
+          "subcategory": "Навесной шкаф",
+          "description": "Навесной шкаф LUNA глубиной 34 см и шириной 170,1 см с корпусом в текстуре Дуб Anziano оснащен тремя распашными фасадами с интегрированными J-ручками и тонированным стеклом. За фасадами расположены полки из ЛДСП. В качестве опции доступна система подсветки (заказывается отдельно).\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711711529941
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/799/580_580_1/rjof60iq6rqzg5uy6qofiwhxdemhmb3s.jpg",
+          "name": "Шкаф витрина Merano",
+          "color": "Monfort White",
+          "price": "800",
+          "sale": "0",
+          "subcategory": "Шкаф-витрина",
+          "description": "Шкаф MERANO оснащен комбинированным фасадом П-образной формы с закаленным тонированным стеклом Dark Grey, которое переходит с фронтальной части на боковую. За вставкой из стекла располагаются две стеклянные полки, за сплошными фасадами – полки из ЛДСП. Внутри шкафа также располагается врезная система подсветки. Предусмотрен выбор системы включения/выключения с ножным выключателем или пультом (заказывается отдельно). Модель может иметь как правое, так и левое открывание.\n\n",
+          "count": 6,
+          "favorite": false,
+          "busket": true,
+          "id": 1711719891638
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/1d5/580_580_1/1d5fc48027f0a84ac9e3b292669cc57a.jpg",
+          "name": "Стеллаж Merano",
+          "color": "Monfort",
+          "price": "400",
+          "sale": "0",
+          "subcategory": "Стеллаж",
+          "description": "Стеллажная система MERANO используется в качестве приставного элемента в композиции с ТВ-тумбой и при желании может быть дополнена навесными шкафами. Возможна сборка стеллажа в зеркальном исполнении.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711723272099
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/871/580_580_1/47y5qvivhbefpv2hpphnsv8xdbpjsddo.jpg",
+          "name": "Тумба под TV Merano",
+          "color": "Monfort white",
+          "price": "600",
+          "sale": "0",
+          "subcategory": "Тумба",
+          "description": "Центральное отделение ТВ-тумбы MERANO представляет собой выдвижной ящик с трендовой формой боковины в отделке внутренней текстурой Шенилл, имитирующей натуральную ткань. Над ним располагается открытая ниша для аппаратуры. По обеим сторонам от него располагаются секции, оснащенные распашными фасадами и полками.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711723449332
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/1c6/580_580_1/k4odpfkiu4d5t1si1447xsyujix1f383.jpg",
+          "name": "Шкаф-витрина с ящиками Turin",
+          "color": "White / Laguna",
+          "price": "400",
+          "sale": "0",
+          "subcategory": "Шкаф-витрина",
+          "description": "Нижнюю часть шкафа-витрины TURIN занимают два выдвижных ящика, фасады которых выполнены в отделке премиальной эмалью оттенка Laguna с шелковистой поверхностью. Две верхние секции оснащены стеклянными фасадами в алюминиевой рамке с системой открывания Push-to-Open, за которыми находятся полки из тонированного стекла. Возможна навеска дверей как на левую, так и на правую сторону. Ножки и световое оборудование заказываются отдельно, благодаря чему можно придать мебели индивидуальный стиль.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711723788930
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/13c/580_580_1/wx7tin0i4l2g7smg9aeaomn6k40rr1yw.jpg",
+          "name": "Полка Turin",
+          "color": "White",
+          "price": "100",
+          "sale": "0",
+          "subcategory": "Полка",
+          "description": "Надежная навесная полка Turin с перегородками рассчитана на нагрузку до 20 кг. Крепления входят в комплектацию.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711724581042
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/765/580_580_1/cx3h0jvhpecbyi0hokcoem8foq3a9ynn.jpg",
+          "name": "Стол журнальный Turin",
+          "color": "White",
+          "price": "99",
+          "sale": "0",
+          "subcategory": "Журнальный стол",
+          "description": "Основанием журнального стола Turin, оборудованного полкой, служит металлическая опора в коричневом цвете.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711724763807
+        },
+        {
+          "parent": "/hall",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/e5b/580_580_1/e5bdd16e9875ea6a5d8fb1a235b854df.jpg",
+          "name": "Тумба под ТВ SAVONA",
+          "color": "Salerno / Black Brown",
+          "price": "600",
+          "sale": "0",
+          "subcategory": "Тумба",
+          "description": "Глянцевые фасады тумб выполнены методом окутывания и не имеют острых кромок, что повышает долговечность и безопасность использования. Благодаря качественным направляющим европейского производства ящики открываются и закрываются плавно и бесшумно. Металлические ручки с гальваническим покрытием сохраняют безупречный внешний вид на протяжении всего срока службы. Применение светильников европейского производства придает дополнительную эстетическую изюминку восприятия гостиной. Возможно дополнительное оснащение тумбы зарядным USB устройством с двумя разъемами (заказывается отдельно).\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711725062703
+        }
+      ],
+      "id": "14ab"
+    },
+    {
+      "categoryName": "Прихожие",
+      "categoryIconName": "hallways",
+      "path": "/hallways",
+      "categoryProducts": [
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/456/580_580_1/luhlovd66hkm941wfyuc82rhjdvwzwue.jpg",
+          "name": "Панель с зеркалом BRUNO",
+          "color": "",
+          "price": "140",
+          "sale": "0",
+          "subcategory": "Зеркало",
+          "description": "Универсальное зеркало BRUNO без внешней рамы с надежным креплением к стене может использоваться как в комбинации со шкафами и тумбами, так и в качестве отдельного элемента интерьера. Зеркало без тонировки. Крепления входят в комплектацию.\n\n",
+          "count": 3,
+          "favorite": false,
+          "busket": true,
+          "id": 1711725442844
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/1a9/580_580_1/yrnpc1u6ubcopocn9zzyi11r2em0rlia.jpg",
+          "name": "Вешалка с мягким элементом BRUNO",
+          "color": "Velutto 16",
+          "price": "150",
+          "sale": "0",
+          "subcategory": "Вешалки",
+          "description": "Мягкая настенная панель BRUNO с крючками темно-коричневого цвета выполнена в отделке велюром и декорирована вертикальной прострочкой. Ткань обладает приятными тактильными свойствами, повышенной износостойкостью и плотностью (антикоготь). Крепления входят в комплектацию.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711725830685
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/afa/580_580_1/bjy0t5ftq0h9hzo0m8swk3caxcj4qfha.jpg",
+          "name": "Однодверный шкаф с зеркалом Bruno",
+          "color": "Black",
+          "price": "400",
+          "sale": "0",
+          "subcategory": "Шкаф",
+          "description": "За зеркальным фасадом однодверного шкафа BRUNO располагается система полок. Шкаф оснащается накладной ручкой черного цвета. Возможно исполнение как с правым, так и с левым открыванием.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711726131624
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/b3e/580_580_1/b3ea720dedf6e55e7cbea5c1d28a0fc4.jpg",
+          "name": "Шкаф с зеркалом Elegante",
+          "color": "Latte",
+          "price": "700",
+          "sale": "0",
+          "subcategory": "Шкаф",
+          "description": "Широчайший ассортимент ELEGANTE включает различные модели шкафов нескольких типоразмеров, которые помогают рационально использовать каждый квадратный сантиметр пространства. Разнообразие текстур делает каждый интерьер уникальным и неповторимым. Коллекция предусматривает возможность оснащения мебельных элементов системами плавного закрывания дверей.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711726257424
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/443/580_580_1/44306dfa45052fd09e7047df591e850d.jpg",
+          "name": "Панель с зеркалом Elegante",
+          "color": "Latte",
+          "price": "500",
+          "sale": "0",
+          "subcategory": "Зеркало",
+          "description": "Зеркальные панели Elegante – настоящая находка для интерьера. Помимо своего прямого назначения, они увеличивают освещенность помещения за счет отраженного света и зрительно расширяют пространство. Зеркало без тонировки. Крепления входят в комплектацию.",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711726369162
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/088/580_580_1/088d6f2794b9e5576679e181680e8370.jpg",
+          "name": "Тумба под обувь Elegante",
+          "color": "Latte",
+          "price": "600",
+          "sale": "0",
+          "subcategory": "Тумба",
+          "description": "Тумбы для обуви различных габаритов позволяют создать систему хранения, которая идеально впишется в интерьер помещения любой площади и конфигурации – от небольшой прихожей до просторного холла загородного дома.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711726535270
+        },
+        {
+          "parent": "/hallways",
+          "image": "https://dyatkovo.ru/upload/resize_cache/iblock/5ad/580_580_1/5ade2fbfbae5e1a24dcbcd2d44c881c7.jpg",
+          "name": "Вешалка Elegante",
+          "color": "Latte",
+          "price": "50",
+          "sale": "0",
+          "subcategory": "Вешалки",
+          "description": "Удобные вешалки Elegante – прекрасное решение для хранения повседневной верхней одежды, которую вы привыкли иметь под рукой. Вешалка может быть доукомплектована тумбой с выдвижными ящиками и открытой полкой для головных уборов. Крепления входят в комплектацию.\n\n",
+          "count": 1,
+          "favorite": false,
+          "busket": false,
+          "id": 1711726630610
+        }
+      ],
+      "id": "50f2"
+    },
+    {
+      "categoryName": "Офисная мебель",
+      "categoryIconName": "office",
+      "path": "/office",
+      "categoryProducts": [],
+      "id": "16fd"
+    },
+    {
+      "categoryName": "Детская",
+      "categoryIconName": "children",
+      "path": "/children",
+      "categoryProducts": [],
+      "id": "1c2b"
+    },
+    {
+      "categoryName": "Матрасы",
+      "categoryIconName": "mattress",
+      "path": "/mattress",
+      "categoryProducts": [],
+      "id": "c6d9"
+    },
+    {
+      "categoryName": "Мягкая мебель",
+      "categoryIconName": "furniture",
+      "path": "/furniture",
+      "categoryProducts": [],
+      "id": "cf2e"
+    },
+    {
+      "categoryName": "Шкафы",
+      "categoryIconName": "cupboard",
+      "path": "/cupboard",
+      "categoryProducts": [],
+      "id": "2186"
+    }
+  ],
+  "massage": [
+    {
+      "id": 1711627332666,
+      "PersonName": "uytre",
+      "PersonMail": "kjhgfd",
+      "PersMassage": " nbvc"
+    },
+    {
+      "id": 1711791824240,
+      "PersonName": "Dgdfjfjdj",
+      "PersonMail": "fdhdfjdj@dthdfhd",
+      "PersMassage": "lkghfsdjkmnbfhdghd thdhdfghdh d dth dr hdh d"
+    }
+  ]
 }

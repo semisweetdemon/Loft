@@ -7,7 +7,7 @@ import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
 import { useSelector } from 'react-redux';
 import { Card } from '../components';
-import first from '../assets/images/first.jpg';
+// import first from '../assets/images/first.jpg';
 
 const Home = () => {
 	const { arr } = useSelector((state) => state.products);

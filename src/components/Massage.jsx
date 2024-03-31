@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Massage = () => {
   const [massage, setMassage] = useState([])
@@ -28,8 +29,8 @@ const Massage = () => {
               <h1>{el.PersonName.slice(0, 1)}</h1>
             </div>
             <div className="person">
-              <h2>Имя: {el.PersonName}</h2>
-              <h3>E-maill: {el.PersonMail}</h3>
+              <h2>Имя: {el.PersonName.length > 15 ? el.PersonName.slice(0, 15) + "..." : el.PersonName}</h2>
+              <h3>E-maill: <Link>{el.PersonMail.length > 15 ? el.PersonMail.slice(0, 15) + "..." : el.PersonMail}</Link> </h3>
             </div>
             <div className="line"></div>
             <div className="chat">
