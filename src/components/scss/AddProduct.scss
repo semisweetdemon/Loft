@@ -1,45 +1,55 @@
 .Product {
+
+  select {
+    width: 500px;
+  }
   @media (max-width: 992px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-  &__add {
-    max-width: 600px;
-    width: 100%;
+  
+  &__block {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    input,
-    textarea {
+    align-items: flex-start;
+    justify-content: space-between;
+    &__add {
+      max-width: 500px;
       width: 100%;
-      padding: 15px;
-      outline: none;
-      background: transparent;
-      border: 1px solid $light-gray;
-    }
-
-    input[value=''] {
-      border: 1px solid $light-gray;
-    }
-
-    textarea {
-      resize: none;
-      height: 200px;
-    }
-
-    button {
-      outline: none;
-      border: none;
-      background: transparent;
-      padding: 10px;
-      border: 1px solid $main-color;
-
-      &:active {
-        background-color: $main-color;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        outline: none;
+        background: transparent;
+        border: 1px solid $light-gray;
       }
+  
+      input[value=''] {
+        border: 1px solid $light-gray;
+      }
+  
+      textarea {
+        resize: none;
+        height: 200px;
+      }
+  
+    }
+  }
+  button {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    border: 1px solid $main-color;
+
+    &:active {
+      background-color: $main-color;
     }
   }
 }

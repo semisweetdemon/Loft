@@ -1,4 +1,13 @@
 #admin {
+	.path {
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		h4 {
+			cursor: pointer;
+		}
+	}
 	.admin {
 		width: 100%;
 		display: flex;

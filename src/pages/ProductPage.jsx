@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setCountPlus, setCountMinus, setAddBusket, setAddRemoveFavorite } from '../redux/Slices/productSlice';
 import { wishlist } from '../components';
 import { functionAddBusket, functionAddRemoveFavorite, functionCountMinus, functionCountPlus } from '../App';
+import Specifications from '../components/Specifications';
 
 const ProductPage = () => {
 	const { arr } = useSelector((state) => state.products);
@@ -71,6 +72,16 @@ const ProductPage = () => {
 									</button>
 								</div>
 								<p>{product.description}</p>
+							</div>
+							<div className="info__product">
+								<div className="info__product__btns">
+									<button>Характеристики</button>
+									<button>Описание</button>
+									<button>Доставка и оплата</button>
+								</div>
+								<div className="specifications">
+									<Specifications/>
+								</div>
 							</div>
 						</div>
 					</div>
