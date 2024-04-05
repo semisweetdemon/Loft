@@ -17,6 +17,7 @@ const ProductPage = () => {
 	const { pathname } = useLocation();
 	const searchProduct = pathname.split('/').filter((el) => el);
 	useTitle(product?.name);
+	const [inputValue, setInputValue] = React.useState('');
 
 	React.useEffect(() => {
 		arr.find((el) => {
@@ -72,16 +73,21 @@ const ProductPage = () => {
 									</button>
 								</div>
 								<p>{product.description}</p>
+								<div className="info__review">
+									<textarea onChange={(e) => setInputValue(e.target.value)} placeholder="Отзыв к товару" value={inputValue}></textarea>
+									<button onClick={() => {}}>Send review</button>
+								</div>
 							</div>
-							<div className="info__product">
-								<div className="info__product__btns">
-									<button>Характеристики</button>
-									<button>Описание</button>
-									<button>Доставка и оплата</button>
-								</div>
-								<div className="specifications">
-									<Specifications/>
-								</div>
+						</div>
+						<div className="info__product">
+							<div className="product__review"></div>
+							<div className="info__product__btns">
+								<button>Характеристики</button>
+								<button>Описание</button>
+								<button>Доставка и оплата</button>
+							</div>
+							<div className="specifications">
+								<Specifications product={product} />
 							</div>
 						</div>
 					</div>
