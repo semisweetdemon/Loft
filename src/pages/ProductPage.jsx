@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTitle } from 'ahooks';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,8 +6,10 @@ import { setCountPlus, setCountMinus, setAddBusket, setAddRemoveFavorite } from 
 import { wishlist } from '../components';
 import { functionAddBusket, functionAddRemoveFavorite, functionCountMinus, functionCountPlus } from '../App';
 import Specifications from '../components/Specifications';
+import Reviews from '../components/Reviews';
 
 const ProductPage = () => {
+	const [off, setOff] = useState(false)
 	const { arr } = useSelector((state) => state.products);
 	const { aboutuser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
@@ -80,14 +82,22 @@ const ProductPage = () => {
 							</div>
 						</div>
 						<div className="info__product">
-							<div className="product__review"></div>
 							<div className="info__product__btns">
-								<button>Характеристики</button>
-								<button>Описание</button>
+								<button onClick={() => {setOff(false)}} style={{
+									borderBottom: !off ? '3px solid #000' : ''
+								}}>Характеристики</button>
+								<button onClick={() => {setOff(true)}}>Отзывы</button>
 								<button>Доставка и оплата</button>
 							</div>
-							<div className="specifications">
-								<Specifications product={product} />
+							<div className="specifications" style={{
+								display: !off ? 'block' : ''
+							}}>
+								<Specifications el={product} />
+							</div>
+							<div className="reviews" style={{
+								display: !off ? '' : 'block'
+							}}>
+								<Reviews />
 							</div>
 						</div>
 					</div>
