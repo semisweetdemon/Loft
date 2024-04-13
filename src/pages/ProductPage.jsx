@@ -6,6 +6,7 @@ import { setCountPlus, setCountMinus, setAddBusket, setAddRemoveFavorite } from 
 import { wishlist } from '../components';
 import { functionAddBusket, functionAddRemoveFavorite, functionCountMinus, functionCountPlus } from '../App';
 import Specifications from '../components/Specifications';
+import { useTranslation } from 'react-i18next';
 
 const ProductPage = () => {
 	const { arr } = useSelector((state) => state.products);
@@ -18,11 +19,12 @@ const ProductPage = () => {
 	const searchProduct = pathname.split('/').filter((el) => el);
 	useTitle(product?.name);
 	const [inputValue, setInputValue] = React.useState('');
+	const { t } = useTranslation();
 
 	React.useEffect(() => {
 		arr.find((el) => {
 			if (el.path === '/' + searchProduct[0]) {
-				setParentElem(el.categoryName);
+				setParentElem(el);
 				el.categoryProducts.find((elem) => {
 					if (elem.id === +searchProduct[1]) {
 						setProduct(elem);
@@ -40,11 +42,11 @@ const ProductPage = () => {
 					<div className="product">
 						<div className="product__nav navigate">
 							<h4 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-								Главная
+								{t('home')}
 							</h4>
 							<h4>/</h4>
 							<h4 onClick={() => navigate(product.parent)} style={{ cursor: 'pointer' }}>
-								{parentElem}
+								{t(parentElem.categoryIconName)}
 							</h4>
 							<h4>/</h4>
 							<h4>{product.name}</h4>
@@ -57,7 +59,11 @@ const ProductPage = () => {
 								<h3>{product.name}</h3>
 								<h6>{product.subcategory}</h6>
 								<h3>${product.price}</h3>
-								{product.color !== '' && <h6>Цвет {product.color}</h6>}
+								{product.color !== '' && (
+									<h6>
+										{t('color')} {product.color}
+									</h6>
+								)}
 								<div className="info__count">
 									<button onClick={() => dispatch(setCountMinus(functionCountMinus(arr, product, aboutuser)))}>-</button>
 									<h3>{product.count}</h3>
@@ -65,26 +71,26 @@ const ProductPage = () => {
 								</div>
 								<div className="info__add">
 									<button onClick={() => dispatch(setAddBusket(functionAddBusket(arr, product, aboutuser)))}>
-										<p>Добавить в корзину</p>
+										<p>{t('addBusket')}</p>
 									</button>
 									<button onClick={() => dispatch(setAddRemoveFavorite(functionAddRemoveFavorite(arr, product, aboutuser)))}>
 										<div className={product.favorite ? 'icon' : ''}>{wishlist}</div>
-										<p>Добавить в желаемое</p>
+										<p>{t('addWishlist')}</p>
 									</button>
 								</div>
 								<p>{product.description}</p>
 								<div className="info__review">
-									<textarea onChange={(e) => setInputValue(e.target.value)} placeholder="Отзыв к товару" value={inputValue}></textarea>
-									<button onClick={() => {}}>Send review</button>
+									<textarea onChange={(e) => setInputValue(e.target.value)} placeholder={t('productReview')} value={inputValue}></textarea>
+									<button onClick={() => {}}>{t('senReview')}</button>
 								</div>
 							</div>
 						</div>
 						<div className="info__product">
 							<div className="product__review"></div>
 							<div className="info__product__btns">
-								<button>Характеристики</button>
-								<button>Описание</button>
-								<button>Доставка и оплата</button>
+								<button>{t('characteristics')}</button>
+								<button>{t('description')}</button>
+								<button>{t('deliver')}</button>
 							</div>
 							<div className="specifications">
 								<Specifications product={product} />

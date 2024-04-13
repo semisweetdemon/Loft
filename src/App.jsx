@@ -95,9 +95,13 @@ function App() {
 	useFavicon('https://png.pngtree.com/png-vector/20230407/ourmid/pngtree-sofa-line-icon-vector-png-image_6677342.png');
 
 	React.useEffect(() => {
-		dispatch(fetchProduct());
-		dispatch(fetchAboutUser());
-		dispatch(fetchOldInfo());
+		const fetchAll = () => {
+			dispatch(fetchProduct());
+			dispatch(fetchAboutUser());
+			dispatch(fetchOldInfo());
+		};
+
+		fetchAll();
 	}, []);
 
 	if (status === 'loading' || status === 'error') {

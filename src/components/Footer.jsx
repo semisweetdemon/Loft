@@ -1,37 +1,39 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+	const { t } = useTranslation();
 	return (
 		<div id="footer">
 			<div className="container">
 				<div className="footer">
 					<div className="footer__left">
-						<h5>НАВИГАЦИЯ</h5>
+						<h5>{t('navigate')}</h5>
 						<div className="footer__links">
 							<div>
-								<Link>Кухни</Link>
-								<Link>Спальни</Link>
-								<Link>Гостинные</Link>
+								<Link>{t('kitchen')}</Link>
+								<Link>{t('bedroom')}</Link>
+								<Link>{t('hall')}</Link>
 							</div>
 							<div>
-								<Link>Прихожие</Link>
-								<Link>Офисная мебель</Link>
-								<Link>Детская</Link>
+								<Link>{t('hallways')}</Link>
+								<Link>{t('office')}</Link>
+								<Link>{t('children')}</Link>
 							</div>
 							<div>
-								<Link>Шкафы</Link>
-								<Link>Матрасы</Link>
-								<Link>Мягкая мебель</Link>
+								<Link>{t('cupboard')}</Link>
+								<Link>{t('mattress')}</Link>
+								<Link>{t('furniture')}</Link>
 							</div>
 						</div>
 						<div className="footer__link">
-							<Link>Акция</Link>
-							<Link>Новинки</Link>
+							<Link>{t('sale')}</Link>
+							<Link>{t('new')}</Link>
 						</div>
 					</div>
 					<div className="footer__right">
 						<h2>LM</h2>
-						<p className="footer__text">г. Анапа, Анапское шоссе, 30 Ж/К Черное море</p>
+						<p className="footer__text">{t('adress')}</p>
 						<div className="footer__links">
 							<a>8 (964) 89 99 119</a>
 							<a>INSTAGRAM</a>

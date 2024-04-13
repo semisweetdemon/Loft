@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Card } from '../components';
 import { useTitle } from 'ahooks';
+import { useTranslation } from 'react-i18next';
 
 const CategoryPage = () => {
 	const { arr } = useSelector((state) => state.products);
@@ -11,6 +12,7 @@ const CategoryPage = () => {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	useTitle(pathname.charAt(1).toUpperCase() + pathname.slice(2));
+	const { t } = useTranslation();
 
 	React.useEffect(() => {
 		arr.map((el) => {
@@ -49,13 +51,13 @@ const CategoryPage = () => {
 				<div className="category" style={{ minHeight: '60vh' }}>
 					<div className="category__nav navigate">
 						<h4 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-							Главная
+							{t('home')}
 						</h4>
 						<h4>/</h4>
-						<h4>{categoryInfo.categoryName}</h4>
+						<h4>{t(categoryInfo.categoryIconName)}</h4>
 					</div>
 					<div className="category__sort">
-						<h3>Раздел</h3>
+						<h3>{t('chapter')}</h3>
 						<div>
 							<select
 								onChange={(e) => {
@@ -66,15 +68,15 @@ const CategoryPage = () => {
 								value={categoryInfo.categoryName}>
 								{arr.map((el) => (
 									<option key={el.id} value={el.categoryName}>
-										{el.categoryName}
+										{t(el.categoryIconName)}
 									</option>
 								))}
 							</select>
 							<select onChange={(e) => setSortBy(e.target.value)} value={sortBy}>
-								<option value="none">None</option>
-								<option value="a-z">A-Z</option>
-								<option value="z-a">Z-A</option>
-								<option value="price">Price</option>
+								<option value="none">{t('none')}</option>
+								<option value="a-z">{t('az')}</option>
+								<option value="z-a">{t('za')}</option>
+								<option value="price">{t('price')}</option>
 							</select>
 						</div>
 					</div>

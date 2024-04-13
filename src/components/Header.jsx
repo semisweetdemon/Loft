@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { logo, wishlist, bag, profile, search, call, delivery, home, remove, about, contact } from '../components';
 import { useDispatch, useSelector } from 'react-redux';
-import * as icons from './icons';
 import { useClickAway } from 'ahooks';
+import { useTranslation } from 'react-i18next';
+
+import { logo, wishlist, bag, profile, search, call, delivery, home, remove, about, contact } from '../components';
+import * as icons from './icons';
 import { setSearch, setWhereIWas } from '../redux/Slices/productSlice';
+import { setLanguage } from '../redux/Slices/langSlice';
 
 export const Header = () => {
+	const { t, i18n } = useTranslation();
 	const { arr, beforeSearch } = useSelector((state) => state.products);
+	const { language } = useSelector((state) => state.language);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const { pathname } = useLocation();
 	const [burger, setBurger] = React.useState(false);
 	const [inputValue, setInputValue] = React.useState('');
 	const burgerRef = React.useRef(null);
+	const [lang, setLang] = React.useState(language);
+
 	let n = 0;
 	const burgerFalse = () => {
 		setBurger(false);
@@ -32,11 +39,17 @@ export const Header = () => {
 		}
 	}, [inputValue]);
 
+	React.useEffect(() => {
+		lang === 'ru' ? i18n.changeLanguage('ru') : i18n.changeLanguage('en');
+		dispatch(setLanguage(lang));
+		localStorage.setItem('lang', JSON.stringify(lang));
+	}, [lang]);
+
 	return (
 		<header id="header">
 			<div ref={burgerRef} className={burger ? 'burger-items show' : 'burger-items'}>
 				<div className="burger-items__close">
-					<h4>Меню</h4>
+					<h4>{t('menu')}</h4>
 					<button
 						onClick={() => {
 							setBurger(false);
@@ -53,7 +66,7 @@ export const Header = () => {
 						}}
 						className="route-items">
 						<div>{home}</div>
-						<h5>Главная</h5>
+						<h5>{t('home')}</h5>
 					</div>
 					<div
 						onClick={() => {
@@ -62,11 +75,11 @@ export const Header = () => {
 						}}
 						className="route-items">
 						<div>{about}</div>
-						<h5>О нас</h5>
+						<h5>{t('about')}</h5>
 					</div>
 					<div className="route-items">
 						<div>{contact}</div>
-						<h5>Контакты</h5>
+						<h5>{t('contact')}</h5>
 					</div>
 					<div
 						onClick={() => {
@@ -75,7 +88,7 @@ export const Header = () => {
 						}}
 						className="route-items">
 						<div>{wishlist}</div>
-						<h5>Избранное</h5>
+						<h5>{t('wishlist')}</h5>
 					</div>
 					<div
 						onClick={() => {
@@ -84,7 +97,7 @@ export const Header = () => {
 						}}
 						className="route-items">
 						<div>{bag}</div>
-						<h5>Корзина</h5>
+						<h5>{t('busket')}</h5>
 					</div>
 				</div>
 				<div className="burger-items__navigation">
@@ -113,9 +126,9 @@ export const Header = () => {
 							</div>
 							<div onClick={() => navigate('/')}>{logo}</div>
 							<nav>
-								<Link to="/">Главная</Link>
-								<Link to="/about">О нас</Link>
-								<Link to="/contact">Контакты</Link>
+								<Link to="/">{t('home')}</Link>
+								<Link to="/about">{t('about')}</Link>
+								<Link to="/contact">{t('contact')}</Link>
 							</nav>
 						</div>
 						<div className="search">
@@ -128,13 +141,19 @@ export const Header = () => {
 									navigate('/search');
 								}}
 								type="text"
-								placeholder="Поиск"
+								placeholder={t('inputSearch')}
 								value={inputValue}
 							/>
+							<select onChange={(e) => setLang(e.target.value)} className="language-button" value={lang}>
+								<option value="en">en</option>
+								<option value="ru">ru</option>
+							</select>
 						</div>
 						<div className="delivery">
 							<Link>{call} 8 (964) 89 99 119</Link>
-							<Link>{delivery} Доставка</Link>
+							<Link>
+								{delivery} {t('delivery')}
+							</Link>
 						</div>
 						<div className="profile">
 							<div onClick={() => navigate('/favorite')}>{wishlist} </div>
@@ -144,14 +163,10 @@ export const Header = () => {
 					</div>
 					{pathname !== '/about' && (
 						<div className="header__navigation">
-							{/* <div className="sale" onClick={() => navigate('/sale')} key={'/sale'}>
-								{icons.sale}
-								Акции
-							</div> */}
 							{arr.map((el) => (
 								<div onClick={() => navigate(el.path)} key={el.path}>
 									{icons[el.categoryIconName]}
-									{el.categoryName}
+									{t(el.categoryIconName)}
 								</div>
 							))}
 						</div>
