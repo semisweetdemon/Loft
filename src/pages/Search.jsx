@@ -1,10 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Card } from '../components';
+import { useTranslation } from 'react-i18next';
 
 const Search = () => {
 	const { arr, search } = useSelector((state) => state.products);
 	const [searchProducts, setSearchProducts] = React.useState([]);
+	const { t } = useTranslation()
 
 	React.useEffect(() => {
 		let array = [];
@@ -20,7 +22,7 @@ const Search = () => {
 		<section id="search">
 			<div className="container">
 				<div className="search" style={{ minHeight: '58vh' }}>
-					<h1>Search</h1>
+					<h1>{t('inputSearch')}</h1>
 					<div className="cards">
 						{searchProducts.map((el) => (
 							<Card el={el} />
@@ -28,7 +30,7 @@ const Search = () => {
 					</div>
 					{search.length !== 0 && searchProducts.length === 0 && (
 						<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '50vh' }}>
-							<h1>То что вы ищете не найдено, проверьте правильно ли вы написали</h1>
+							<h1>{t('searchUnknown')}</h1>
 						</div>
 					)}
 				</div>

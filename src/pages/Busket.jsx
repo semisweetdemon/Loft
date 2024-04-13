@@ -3,6 +3,7 @@ import { useTitle } from 'ahooks';
 import { useSelector } from 'react-redux';
 import { BusketCard } from '../components';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Busket = () => {
 	useTitle('Busket');
@@ -10,6 +11,7 @@ const Busket = () => {
 	const [busketItems, setBusketItems] = React.useState([]);
 	const [allPrice, setAllPrice] = React.useState(0);
 	const navigate = useNavigate();
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		let array = [];
@@ -29,16 +31,16 @@ const Busket = () => {
 					<div className="busket" style={{ minHeight: '58vh' }}>
 						<div className="busket__nav navigate">
 							<h4 onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-								Главная
+								{t('home')}
 							</h4>
 							<h4>/</h4>
-							<h4>Корзина</h4>
+							<h4>{t('busket')}</h4>
 						</div>
 						<div className="busket__counter">
-							<h5>Ваша корзина</h5>
+							<h5>{t('yourBasket')}</h5>
 							<div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-								<h5>${allPrice} Общаяя сумма</h5>
-								<h5>{busketItems.length} штук</h5>
+								<h5>{t('totalPrice')}: ${allPrice} </h5>
+								<h5>{t('countItem')}: {busketItems.length}</h5>
 							</div>
 						</div>
 						<div className="busket__cards">
@@ -47,7 +49,7 @@ const Busket = () => {
 							))}
 						</div>
 						<div className="busket__button">
-							<button className="">Оформить заказ</button>
+							<button className="">{t('checkout')}</button>
 						</div>
 					</div>
 				</div>

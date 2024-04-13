@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTitle } from 'ahooks';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
+
 import { setCountPlus, setCountMinus, setAddBusket, setAddRemoveFavorite } from '../redux/Slices/productSlice';
 import { wishlist } from '../components';
 import { functionAddBusket, functionAddRemoveFavorite, functionCountMinus, functionCountPlus } from '../App';
 import Specifications from '../components/Specifications';
-import { useTranslation } from 'react-i18next';
+import Reviews from '../components/Reviews';
 
 const ProductPage = () => {
+	const [off, setOff] = useState(false);
 	const { arr } = useSelector((state) => state.products);
 	const { aboutuser } = useSelector((state) => state.user);
 	const dispatch = useDispatch();
@@ -20,6 +23,10 @@ const ProductPage = () => {
 	useTitle(product?.name);
 	const [inputValue, setInputValue] = React.useState('');
 	const { t } = useTranslation();
+
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	React.useEffect(() => {
 		arr.find((el) => {
@@ -85,15 +92,38 @@ const ProductPage = () => {
 								</div>
 							</div>
 						</div>
-						<div className="info__product">
-							<div className="product__review"></div>
-							<div className="info__product__btns">
-								<button>{t('characteristics')}</button>
-								<button>{t('description')}</button>
+						<div className="info-product">
+							<div className="info-product__btns">
+								<button
+									onClick={() => {
+										setOff(false);
+									}}
+									style={{
+										borderBottom: !off ? '3px solid #000' : '',
+									}}>
+									{t('characteristics')}
+								</button>
+								<button
+									onClick={() => {
+										setOff(true);
+									}}>
+									{t('description')}
+								</button>
 								<button>{t('deliver')}</button>
 							</div>
-							<div className="specifications">
+							<div
+								className="specifications"
+								style={{
+									display: !off ? 'block' : '',
+								}}>
 								<Specifications product={product} />
+							</div>
+							<div
+								className="reviews"
+								style={{
+									display: !off ? '' : 'block',
+								}}>
+								<Reviews />
 							</div>
 						</div>
 					</div>

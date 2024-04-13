@@ -11,19 +11,19 @@ export const Footer = () => {
 						<h5>{t('navigate')}</h5>
 						<div className="footer__links">
 							<div>
-								<Link>{t('kitchen')}</Link>
-								<Link>{t('bedroom')}</Link>
-								<Link>{t('hall')}</Link>
+								<Link to="/kitchen">{t('kitchen')}</Link>
+								<Link to="/bedroom">{t('bedroom')}</Link>
+								<Link to="/hall">{t('hall')}</Link>
 							</div>
 							<div>
-								<Link>{t('hallways')}</Link>
-								<Link>{t('office')}</Link>
-								<Link>{t('children')}</Link>
+								<Link to="/hallways">{t('hallways')}</Link>
+								<Link to="/office">{t('office')}</Link>
+								<Link to="/children">{t('children')}</Link>
 							</div>
 							<div>
-								<Link>{t('cupboard')}</Link>
-								<Link>{t('mattress')}</Link>
-								<Link>{t('furniture')}</Link>
+								<Link to="/cupboard">{t('cupboard')}</Link>
+								<Link to="/kitchen">{t('mattress')}</Link>
+								<Link to="/furniture">{t('furniture')}</Link>
 							</div>
 						</div>
 						<div className="footer__link">

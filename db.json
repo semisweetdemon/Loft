@@ -16,7 +16,7 @@
         {
           "id": 1711345366895,
           "count": 1,
-          "busket": true,
+          "busket": false,
           "favorite": true
         },
         {
@@ -51,31 +51,31 @@
         },
         {
           "id": 1711706600198,
-          "count": 10,
-          "busket": true,
+          "count": 1,
+          "busket": false,
           "favorite": true
         },
         {
           "id": 1711706894281,
           "count": 1,
-          "busket": true,
+          "busket": false,
           "favorite": true
         },
         {
           "id": 1711707058340,
           "count": 1,
-          "busket": true,
+          "busket": false,
           "favorite": true
         },
         {
           "id": 1711710287400,
-          "count": 4,
+          "count": 5,
           "busket": true,
           "favorite": true
         },
         {
           "id": 1711719891638,
-          "count": 6,
+          "count": 1,
           "busket": true,
           "favorite": false
         },
@@ -725,18 +725,5 @@
       "id": "2186"
     }
   ],
-  "massage": [
-    {
-      "id": "1711886366109",
-      "PersonName": "Элдияр",
-      "PersonMail": "semisweetdemon@gmail.com",
-      "PersMassage": "ловапркпршвщамышщкмырвкмщшырм кгпврпыщшмрывщрм ываыыв"
-    },
-    {
-      "id": "1711886453132",
-      "PersonName": "Кудайберген ",
-      "PersonMail": "kagastiev.kudaibergen.kk@gmail.com",
-      "PersMassage": "iuytrewsdfgh sdfghjkjh ,mnbvcdtyu uytr "
-    }
-  ]
+  "massage": []
 }

@@ -4,10 +4,12 @@ import { wishlist } from '../components';
 import { setAddRemoveFavorite, setAddBusket } from '../redux/Slices/productSlice';
 import { useNavigate } from 'react-router-dom';
 import { functionAddBusket, functionAddRemoveFavorite } from '../App';
+import { useTranslation } from 'react-i18next';
 
 export const Card = ({ el }) => {
 	const { arr } = useSelector((state) => state.products);
 	const { aboutuser } = useSelector((state) => state.user);
+	const {t} = useTranslation()
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
@@ -36,7 +38,7 @@ export const Card = ({ el }) => {
 						onClick={() => {
 							dispatch(setAddBusket(functionAddBusket(arr, el, aboutuser)));
 						}}>
-						Добавить в корзину
+						{t('addBusket')}
 					</button>
 				</div>
 			</div>

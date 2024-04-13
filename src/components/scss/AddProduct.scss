@@ -1,4 +1,4 @@
-.Product {
+.product {
 
   select {
     width: 500px;
@@ -14,6 +14,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+  }
+
+  .block {
     &__add {
       max-width: 500px;
       width: 100%;

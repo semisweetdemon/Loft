@@ -2,17 +2,19 @@ import { useState } from 'react';
 import AddProduct from '../components/AddProduct';
 import Massage from '../components/Massage';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Admin = () => {
 	const [off, setOff] = useState(false);
 	const navigate = useNavigate()
+	const { t } = useTranslation()
 	return (
 		<section id="admin">
 			<div className="container">
 				<div className="path">
-					<h4 onClick={() => {navigate('/')}}>Главная</h4>
+					<h4 onClick={() => {navigate('/')}}>{t('home')}</h4>
 					<h4>/</h4>
-					<h4>Личный кабинет</h4>
+					<h4>{t('cabinet')}</h4>
 				</div>
 				<div className="admin">
 					<div className="zakladki">
@@ -21,14 +23,14 @@ const Admin = () => {
 								setOff(false);
 								console.log(off);
 							}}>
-							Add Product
+							{t('addProduct')}
 						</button>
 						<button
 							onClick={() => {
 								setOff(true);
 								console.log(off);
 							}}>
-							Massage
+							{t('message')}
 						</button>
 					</div>
 					<div className="line__big"></div>

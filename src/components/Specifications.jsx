@@ -7,8 +7,9 @@ const Specifications = ({ product }) => {
 
 	return (
 		<div className="specifications">
-			<div className="block">
-				<div className="specification_1">
+			{
+				<div className="block">
+				<div className="block__one">
 					<h3>{t('size')}</h3>
 					<h3>{product.size}</h3>
 					<h3>{t('sleepArea')}</h3>
@@ -24,7 +25,7 @@ const Specifications = ({ product }) => {
 					<h3>{t('pillow')}</h3>
 					<h3>{product.fillingPillows}</h3>
 				</div>
-				<div className="specification_1">
+				<div className="block__one">
 					<h3>{t('linen')}</h3>
 					<h3>{product.linenDrawer}</h3>
 					<h3>{t('charge')}</h3>
@@ -39,6 +40,7 @@ const Specifications = ({ product }) => {
 					<h3>{product.manufacturer}</h3>
 				</div>
 			</div>
+			}
 		</div>
 	);
 };

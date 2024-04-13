@@ -15,6 +15,7 @@ const CategoryPage = () => {
 	const { t } = useTranslation();
 
 	React.useEffect(() => {
+		window.scrollTo(0, 0);
 		arr.map((el) => {
 			if (el.path === pathname) {
 				switch (sortBy) {

@@ -1,10 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Card } from '../components';
+import { useTranslation } from 'react-i18next';
 
 const Favorite = () => {
 	const { arr } = useSelector((state) => state.products);
 	const [favorite, setFavorite] = React.useState([]);
+	const {t} = useTranslation()
 
 	React.useEffect(() => {
 		let array = [];
@@ -20,7 +22,7 @@ const Favorite = () => {
 		<section id="favorite">
 			<div className="container">
 				<div className="favorite" style={{ minHeight: '58vh' }}>
-					<h2>Favorite</h2>
+					<h2>{t('favorite')}</h2>
 					<div className="cards">
 						{favorite.map((el) => (
 							<Card el={el} />
